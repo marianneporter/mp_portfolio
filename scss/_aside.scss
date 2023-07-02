@@ -1,0 +1,43 @@
+.aside h1  {
+    color: white;
+    border-bottom: 0.5px solid #f1f1f1;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.aside {
+    height: 100%; 
+    width: 15rem; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111;   
+    overflow-x: hidden;  
+  }
+  
+  /* The navigation menu links */
+  .aside nav a {
+    padding: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #818181;
+    border-bottom: 0.5px solid #f1f1f1;;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .aside nav a:hover {
+    color: #f1f1f1;
+  }  
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .aside {padding-top: 15px;}
+    .aside a {font-size: 18px;}
+  }

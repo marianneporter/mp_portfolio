@@ -1,0 +1,9 @@
+.projects {
+    display: flex;
+
+    &__card {
+        height: 20rem;
+        flex: 1 0 30rem;        
+    }
+
+}

@@ -1,0 +1,65 @@
+.aside { 
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+
+.main-container {    
+    @include md {
+      margin-left: 15rem;
+      width: calc(100vw - 16rem);    
+    }   
+}
+
+.main {
+    h2 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 3rem;
+    }
+}
+
+.main .projects {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: auto;
+   
+
+    &__card {
+        height: 25rem;
+        max-width: 25rem;
+        flex: 1 0 25rem;
+        border: 1px solid black;
+           
+
+        .img-wrapper {
+            max-width: 100%;
+        }
+
+      
+        img {
+            max-width: inherit;
+            height: auto;
+        }
+
+        h3, p, button {
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        button {
+            height: 3rem;
+            width: 10rem;
+            background-color: #330867;
+            color: white;   
+
+
+        }
+
+    }
+
+}
