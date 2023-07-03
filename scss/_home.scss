@@ -31,10 +31,18 @@
         width: auto;
     }   
 
+    @include lg {
+        padding: 0 3rem 0 3rem;
+    }
+
+    @include lg {
+        padding: 0 10rem 0 10rem;
+    }
+
     &__card {
-        height: 25rem;
+        height: auto;
         max-width: 90%;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
 
         @include md {
             height: auto;
@@ -55,8 +63,7 @@
 
 
 
-        @include md {
-     //       min-height: 50rem;
+        @include md {    
             max-width: 25rem;
             flex: 1 0 25rem;
             &:not(:first-child) {
@@ -97,10 +104,80 @@
             font-size: 1.1rem;
             align-self: center;
             margin-top: 1.25rem;
-
-
+           
         }
+    }
+}
 
+.contact {
+    background-color:  lighten(map-get($colors, "mid-grey"), 25%);   
+
+    h2 {
+        padding-top: 2rem;
+        @include xl {
+            margin-left: 5%;
+            margin-bottom: 1rem;
+        }
     }
 
+    &__form {
+   //     background-color: green;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        // flex-direction: column;
+        // align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 70rem;
+
+        padding: 0 0 2rem 0;
+
+ 
+
+        input {
+            display: block;
+            width:90%;        
+            margin-bottom: 1rem;
+            padding: 1rem 0.5rem 1rem;
+             
+            @include lg {
+                padding: 1rem 0.5rem;
+                &:nth-child(-n+2) {
+                    width:calc(45% - 0.5rem);
+                }
+            }
+
+            @include xl {
+                &:nth-child(n+3):nth-child(-n+4) {
+                    width: calc(45% - 0.5rem);
+                  
+                }
+            }
+        }
+
+        textarea {            
+            height: 8rem;
+            padding: 0.75rem 0 0 0.5rem;
+            width: 90%;
+        }
+
+        button {
+            height: 3rem;
+            width: 10rem;
+            background-color: #498EDE;
+            color: white;   
+            border: none;
+            border-radius: 0.2rem;
+            font-weight: 600;
+            font-size: 1.1rem;          
+            margin-top: 1.25rem;
+          
+            
+        }
+
+ 
+    }
 }
+
