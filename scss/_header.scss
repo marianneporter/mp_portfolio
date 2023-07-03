@@ -1,5 +1,5 @@
 .header {   
-   // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  
     background-image: url("/assets/images/laptop.jpg");
     background-repeat: no-repeat; 
     background-position: center;
@@ -11,31 +11,71 @@
 
     .text {
         position: absolute;
-        bottom: 5rem;
-        right: 10rem;
+        bottom: 15%;
+        right: 5%;
+
+        @include md {
+            bottom: 5rem;
+            right: 1rem;
+        }
+
+        @include lg {
+            bottom: 3rem;
+            right: 2rem;
+        }
+
+        @include xl {
+            bottom: 6rem;
+            right: 7rem;
+        }
+    
         color: white;
+      
     }  
 
 
     .photo-container { 
-        margin-top: 15rem; 
+        margin-top: 25rem;
+
+        @include sm {
+            margin-top: 15rem; 
+        }
+     
     
         img {
+            max-width: 8rem;
+
+            @include sm {
+                max-width: 12rem;
+            }
+
             display: block;
             margin: 0 auto;
-            max-width: 12rem;
+         
             height: auto;     
             border-radius: 50%; 
         }
-    }    
+    }   
+    
+
 
     h2, h3 {
         text-shadow: 1px 1px 0 #D76787;
+        @include md {
+            font-size: 2rem;
+        }
     }
 
     h1 {
+        @include md {
+            font-size: 3rem;
+        }
+
+        @include lg {
+            font-size: 3.25rem;
+        }
         font-family: 'Rubik Regular'; 
-        font-size: 3.25rem;
+       
         letter-spacing: 0.05rem;
         text-shadow: 2px 2px 0 #D76787;
     }
@@ -45,7 +85,17 @@
     }
 
     h3 {
-      margin-top: 0.75rem;
+       margin-top: 0.75rem;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+
+        @include md {
+            text-align: left;
+        }
+        
+        
     }
 
 }
