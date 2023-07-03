@@ -37,9 +37,4 @@
     text-shadow: 1px 1px 0 #D76787;
   }  
 
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .aside {padding-top: 15px;}
-    .aside a {font-size: 18px;}
-  }
+ 
