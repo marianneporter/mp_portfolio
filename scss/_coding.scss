@@ -1,5 +1,5 @@
 .main-container.coding {
-    @include page-base;
+    @include background;
 
     background-color: map-get($colors,"dark-grey");
     background-blend-mode: multiply;    

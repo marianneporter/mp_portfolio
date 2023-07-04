@@ -7,10 +7,7 @@
 }
 
 .main-container {    
-    @include lg {
-      margin-left: 15rem;
-      width: calc(100vw - 16rem);    
-    }   
+    @include main-container;
 }
 
 .main {

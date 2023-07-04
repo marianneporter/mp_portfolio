@@ -1,23 +1,14 @@
-.main-container.scs {
-  //  @include page-base;
+.main-container.scs {  
 
     background-color: darken( map-get($colors,"dark-grey"), 15%);
-    color: white;
-
-   // width: calc( 100vw - 15rem );
+    color: white;  
     min-height: 100vh;
     width: 100%;
     @include lg-content-width;
-
-
-
- //   background-blend-mode: multiply;    
-    @include md {
-       // width: calc( 100vw - 15rem );
-     
-        @include page-base;
+ 
+    @include md {     
+        @include background;
         background-blend-mode: multiply; 
-
     }
 
     .content {
@@ -57,10 +48,6 @@
         @include xl {
             padding: 4rem 15% 4rem 15%;
             text-align: center;
-        }   
-        
-        
+        }           
     }
-
-
 }
