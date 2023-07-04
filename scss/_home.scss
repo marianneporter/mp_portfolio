@@ -7,7 +7,7 @@
 }
 
 .main-container {    
-    @include md {
+    @include lg {
       margin-left: 15rem;
       width: calc(100vw - 16rem);    
     }   

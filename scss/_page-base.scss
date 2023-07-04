@@ -1,3 +1,24 @@
+.outer-container {
+    position: relative;
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .aside {
+        display: none;
+    }
+    
+    @include lg {
+        .mobile-nav {
+            display: none;
+        }
+        .aside {
+            display: block;
+        }
+    }
+}
+
 @mixin page-base {
     background-image: url("/assets/images/laptop.jpg");
     background-repeat: no-repeat; 
@@ -8,15 +29,15 @@
     background-color: map-get($colors,"dark-grey");
     color: white;
 
-    @include md-content-width;
+    @include lg-content-width;
 
     // @include md {
     //     width: calc( 100vw - 15rem );
     // }
 }
 
-@mixin md-content-width {
-    @include md {
+@mixin lg-content-width {
+    @include lg {
         width: calc( 100vw - 15rem );
     }
 }

@@ -7,13 +7,14 @@
    // width: calc( 100vw - 15rem );
     min-height: 100vh;
     width: 100%;
+    @include lg-content-width;
 
 
 
  //   background-blend-mode: multiply;    
     @include md {
        // width: calc( 100vw - 15rem );
-        @include md-content-width;
+     
         @include page-base;
         background-blend-mode: multiply; 
 
