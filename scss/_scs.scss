@@ -1,0 +1,65 @@
+.main-container.scs {
+  //  @include page-base;
+
+    background-color: darken( map-get($colors,"dark-grey"), 15%);
+    color: white;
+
+   // width: calc( 100vw - 15rem );
+    min-height: 100vh;
+    width: 100%;
+
+
+
+ //   background-blend-mode: multiply;    
+    @include md {
+       // width: calc( 100vw - 15rem );
+        @include md-content-width;
+        @include page-base;
+        background-blend-mode: multiply; 
+
+    }
+
+    .content {
+        padding: 2rem 1rem 14rem 1rem;
+
+        article {
+            margin-top: 1.25rem;
+            margin-bottom: 2rem;
+
+            h2 {
+                padding-bottom:0.25rem;
+            }
+
+            p{
+                padding-top: 1rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.025rem;
+            }
+
+            li {
+                padding-top: 0.5rem;
+                line-height: 1.5rem;
+                letter-spacing: 0.025rem;               
+            }
+        }
+
+        @include sm {
+            padding:4rem 3rem;
+        }
+
+       
+        @include lg {
+            padding-left: 4rem;
+            padding-right: 8rem;
+        }
+
+        @include xl {
+            padding: 4rem 15% 4rem 15%;
+            text-align: center;
+        }   
+        
+        
+    }
+
+
+}

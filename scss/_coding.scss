@@ -1,0 +1,27 @@
+.main-container.coding {
+    @include page-base;
+
+    background-color: map-get($colors,"dark-grey");
+    background-blend-mode: multiply;    
+
+    .content {
+        padding: 2rem 1rem 1rem 1rem;
+
+        p {
+            padding-top: 1rem;
+            font-size: 1.1rem;
+        }
+
+        @include lg {
+            padding: 4rem;
+        }
+
+        @include xl {
+            padding: 6rem;
+        }   
+        
+        
+    }
+
+
+}

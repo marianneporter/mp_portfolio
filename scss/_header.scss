@@ -1,10 +1,7 @@
 .header {   
-  
-    background-image: url("/assets/images/laptop.jpg");
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+ 
+    @include page-base;
+ 
     position: relative;
 
     font-family: 'Rubik Regular'; 

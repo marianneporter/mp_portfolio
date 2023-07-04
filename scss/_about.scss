@@ -1,13 +1,8 @@
 .main-container.about {
-    background-image: url("/assets/images/laptop.jpg");
-    background-repeat: no-repeat; 
-    background-position: center;
-    background-size: cover;
-    height: 100vh;   
-    background-color: map-get($colors,"dark-grey");
-    background-blend-mode: multiply;
+    @include page-base;
 
-    color: white;
+    background-color: map-get($colors,"dark-grey");
+    background-blend-mode: multiply;    
 
     .content {
 
