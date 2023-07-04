@@ -5,7 +5,7 @@
     background-blend-mode: multiply;    
 
     .content {
-        padding: 2rem 1rem 1rem 1rem;
+        padding: 2.5rem 1.5rem 1rem 1.5rem;
 
         p {
             padding-top: 1rem;
@@ -18,10 +18,6 @@
 
         @include xl {
             padding: 6rem;
-        }   
-        
-        
+        }           
     }
-
-
 }
