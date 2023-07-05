@@ -1,14 +1,19 @@
-.aside h1  {
-    color: white;
-    text-shadow: 4px 3px 2px #D76787;
-    border-bottom: 0.5px solid #f1f1f1;
+.aside h1  {       
+    border-bottom: 0.5px solid lighten(map-get($colors, 'mid-pink'), 20%);
     height: 6rem;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 3rem;
     letter-spacing: 1px;
+   
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        color: white;       
+        text-shadow: 4px 3px 2px #D76787;
+    }
 }
 
 .aside {
@@ -27,9 +32,8 @@
     padding: 1rem 1rem 1rem 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-//    color: #818181;
     color: lighten(map-get($colors, 'mid-pink'), 35%);
-    border-bottom: 0.5px solid #f1f1f1;;
+    border-bottom: 0.5px solid lighten(map-get($colors, 'mid-pink'), 20%);
     display: block;
   }
   
