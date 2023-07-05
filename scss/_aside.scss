@@ -1,6 +1,6 @@
 .aside h1  {
     color: white;
-    text-shadow: 2px 2px 0 #D76787;
+    text-shadow: 4px 3px 2px #D76787;
     border-bottom: 0.5px solid #f1f1f1;
     height: 6rem;
     width: 100%;
@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    letter-spacing: 1px;
 }
 
 .aside {
@@ -26,15 +27,18 @@
     padding: 1rem 1rem 1rem 1rem;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #818181;
+//    color: #818181;
+    color: lighten(map-get($colors, 'mid-pink'), 35%);
     border-bottom: 0.5px solid #f1f1f1;;
     display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
   .aside nav a:hover {
-    color: #f1f1f1;
-    text-shadow: 1px 1px 0 #D76787;
+    color: lighten(map-get($colors, 'mid-pink'), 10%);
+    background-color: map-get($colors, 'dark-pink');
+    color: white;
+    transform: scale(1.05);
   }  
 
  

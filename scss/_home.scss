@@ -13,11 +13,12 @@
 .main {
     h2 {
         margin: 3rem 1rem 2rem 1rem;;
+        color: map-get($colors, 'dark-pink');
 
         @include lg {
             margin-left: 5%;
         }
-    }
+    }  
 }
 
 .main .projects {   

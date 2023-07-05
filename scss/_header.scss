@@ -57,7 +57,7 @@
 
 
     h2, h3 {
-        text-shadow: 1px 1px 0 #D76787;
+        text-shadow: 3px 3px 1px map-get($colors, 'dark-pink');
         @include md {
             font-size: 2rem;
         }
@@ -74,7 +74,7 @@
         font-family: 'Rubik Regular'; 
        
         letter-spacing: 0.05rem;
-        text-shadow: 2px 2px 0 #D76787;
+        text-shadow: 4px 4px 2px map-get($colors, 'dark-pink');
     }
     h2 {
         margin-top: 1rem;
