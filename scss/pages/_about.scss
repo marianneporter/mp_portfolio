@@ -1,0 +1,83 @@
+.main-container.about {
+    @include background;
+
+    background-color: map-get($colors,"dark-grey");
+    background-blend-mode: multiply;    
+
+    .content {
+
+        padding: 3rem 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.4px;
+
+        h1 {
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px  map-get($colors, 'mid-pink');
+        }
+
+        p {      
+            &:nth-child(2) {
+                margin-top: 1.5rem;
+            }            
+        }
+
+        @include xs { 
+            p {
+                padding-top: 0.25rem;
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                letter-spacing: 0.05rem;
+            }
+        }
+       
+
+        @include sm {
+            margin: 0 auto;
+            padding-top: 2rem;
+            max-width: 75rem;
+            line-height: 3rem;
+    
+            h1 {
+                margin-bottom: 2rem;
+            }
+    
+            p {
+                font-size: 1.75rem;
+    
+                &:nth-child(2) {
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+
+        @include sm-landscape-phone {
+            padding-top: 7.5rem;
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            p {
+                font-size: 1.25rem;
+                margin: 0 2.5rem;
+            }
+        }
+
+        @include md {
+            padding: 2rem;
+            text-align: center;
+            
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+    
+                &:nth-child(2) {
+                    margin-top: 1.5rem;
+                }
+            }          
+        }
+    }
+}

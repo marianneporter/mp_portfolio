@@ -1,0 +1,25 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Rubik Regular'; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+input, textarea {
+    font-family: 'Rubik Regular'; 
+}
+
+textarea::placeholder, input::placeholder {
+    font-family: 'Rubik Regular'; 
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
