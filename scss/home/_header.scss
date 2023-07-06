@@ -86,23 +86,21 @@
 
         font-family: 'Rubik Regular'; 
        
-        letter-spacing: 0.05rem;
-  //      text-shadow: 3px 3px 2px map-get($colors, 'dark-pink');  //all screens h1
+        letter-spacing: 0.05rem;  
 
-        text-shadow: 1.5px 1.5px 2px lighten(map-get($colors, 'dark-pink'), 10%);  //all screens h1
+        text-shadow: 1.5px 1.5px 2px lighten(map-get($colors, 'dark-pink'), 10%);  
 
         @include lg {
-            text-shadow: 2px 2px 2.5px 2.5px lighten(map-get($colors, 'dark-pink'), 10%);  //all screens h1
+            text-shadow: 2px 2px 2.5px 2.5px lighten(map-get($colors, 'dark-pink'), 10%);  
         }
     }
 
     .text-container h2, .text-container h3 {
-  //      text-shadow: 2px 2px 1px map-get($colors, 'dark-pink');  // all screend h2 and h3
-
-        text-shadow: 1px 1px 2px map-get($colors, 'dark-pink');  // all screend h2 and h3
+ 
+        text-shadow: 1px 1px 2px map-get($colors, 'dark-pink');  
 
         @include lg {
-            text-shadow: 1.5px 1.5px 2px 2px lighten(map-get($colors, 'dark-pink'), 10%);  //all screens h1
+            text-shadow: 1.5px 1.5px 2px 2px lighten(map-get($colors, 'dark-pink'), 10%);  
         }
 
 
