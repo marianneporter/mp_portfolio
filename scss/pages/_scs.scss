@@ -18,7 +18,7 @@
         padding: 5rem 1rem 14rem 1rem;
 
         h1 {
-            text-shadow: 2px 2px  map-get($colors, 'mid-pink');
+            text-shadow: 1.5px 1.5px 2px  map-get($colors, 'mid-pink');
             letter-spacing: 0.1rem;
         }
 
@@ -29,7 +29,7 @@
             h2 {
                 padding-bottom:0.25rem;
                 letter-spacing: 0.05rem;
-                text-shadow: 1.5px 1.5px  map-get($colors, 'mid-pink');
+                text-shadow: 1px 1px 1.5  map-get($colors, 'mid-pink');
             }
 
             p{
