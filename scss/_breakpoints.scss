@@ -8,7 +8,6 @@ $breakpoints: (
 
 $landscape-phone-height: 450px;
 
-
 @mixin xs {
     @media (min-width: map-get($breakpoints, "xs")) {
         @content;
