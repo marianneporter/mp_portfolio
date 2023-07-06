@@ -9,7 +9,7 @@
 
     font-family: 'Rubik Regular'; 
 
-    .text {
+    .text-container {
      
         position: absolute;
    
@@ -52,7 +52,7 @@
     }  
 
 
-    .photo-container { 
+    .text-container .photo-container { 
         @include lg {
      
             margin: 0 auto;
@@ -81,7 +81,7 @@
     }   
     
 
-    h1 {
+    .text-container h1 {
         font-size: 2.5rem;
 
         @include md {
@@ -98,7 +98,7 @@
         text-shadow: 3px 3px 2px map-get($colors, 'dark-pink');
     }
 
-    h2, h3 {
+    .text-container h2, .text-container h3 {
         text-shadow: 2px 2px 1px map-get($colors, 'dark-pink');
 
         font-size: 1.75rem;
@@ -117,12 +117,12 @@
     }
 
 
-    h2 {
+    .text-container h2 {
         margin-top: 0.75rem;
         letter-spacing: 0.03rem;    
     }
 
-    h3 {
+    .text-container h3 {
        margin-top: 0.25rem;  
     }
 
