@@ -3,11 +3,7 @@
     @include background;
 
     background-color: lighten(map-get($colors,"mid-grey"), 20%);
-    background-blend-mode: multiply;    
-
-    // @include lg {
-    //     background-blend-mode: normal;
-    // }
+    background-blend-mode: multiply;   
  
     position: relative;
 
@@ -58,7 +54,7 @@
 
     .photo-container { 
         @include lg {
-      //      background-color : green;
+     
             margin: 0 auto;
         }
 
@@ -76,12 +72,6 @@
                max-width: 7rem;
 
             }
-
-            // @include md {
-            //     display: block;
-            // }
-
-            
 
             margin: 0 auto;
          
