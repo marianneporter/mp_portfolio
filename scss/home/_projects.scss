@@ -1,53 +1,71 @@
 @mixin projects {
+      // **************************************************************************/
+    // scss for project cards group                                             */
+    // **************************************************************************/
+    display: grid;
+    grid-template-columns: 1fr;    
+    gap: 2rem;
+    padding: 0 2rem;
+
     @include md {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
-        width: auto;
+        grid-template-columns: 1fr 1fr;
     }   
-    
+
     @include lg {
-        padding: 0 10rem 0 10rem;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;       
+    }   
+                  
+    @include xl {
+        grid-template-columns: 1fr 1fr 1fr;  
+        margin-left: 5%;
+        margin-right: 5%;
     }
+
+    @include xxl {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
     
+    // ***************************************************************************/
+    // scss for an individual project card                                       */
+    // ***************************************************************************/
     &__card {
-        height: auto;
-        max-width: 90%;
-        padding-bottom: 2rem;
-        transition: transform 1.5s ease;
-    
-        @include md {
-            height: auto;
-         
-        }
-    
         display: flex;
         flex-direction: column;   
         gap: 1rem;
+        height: auto;   
+        padding-bottom: 2rem;
+        transition: transform 1.5s ease;    
     
         &:first-child {
             margin: 0 auto;
         }
         &:not(:first-child) {
             margin: 4rem auto;
-        }    
-    
-        @include md {    
-            max-width: 25rem;
-            flex: 1 0 25rem;
+        }  
+
+        @include md {      
+
             &:not(:first-child) {
                 margin: 0 auto;
             }           
         }
-    
-        border: none;
+
+        @include lg {    
+ 
+            &:not(:first-child) {
+                margin: 0 auto;
+            }           
+        }
+
         box-shadow: 0 0 10px 0 #A3ABBD;
     
         .img-wrapper {
             max-width: 100%;
-        }
-    
+        }    
       
         img {
             max-width: inherit;
