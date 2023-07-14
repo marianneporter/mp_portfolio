@@ -1,11 +1,13 @@
-.main-container.scs {  
+.scs {  
+
+    @include main-container;
 
     background-color: darken( map-get($colors,"dark-grey"), 15%);
     color: white;  
     min-height: 100vh;
     width: 100%;
-
-    text-align: center;
+    text-align: left;
+ 
     @include lg-content-width;
  
     @include md {     
@@ -13,50 +15,66 @@
         background-blend-mode: multiply; 
     }
 
-    .content {
+    padding: 5rem 1rem 14rem 1rem;    
 
-        padding: 5rem 1rem 14rem 1rem;
+}
 
-        h1 {
-            text-shadow: 1.5px 1.5px 2px  map-get($colors, 'mid-pink');
-            letter-spacing: 0.1rem;
-        }
 
-        article {
-            margin-top: 1.25rem;
-            margin-bottom: 2.25rem;
+.scs h1 {    
+    text-shadow: 1.5px 1.5px 2px  map-get($colors, 'mid-pink');
+    letter-spacing: 0.1rem;  
+    margin: 0 auto 0;
+  //  padding-top: 3rem;
+    max-width: 50rem;
+}
 
-            h2 {
-                padding-bottom:0.25rem;
-                letter-spacing: 0.05rem;
-                text-shadow: 1px 1px 1.5  map-get($colors, 'mid-pink');
-            }
+.scs article {
+    margin-top: 1.25rem;
+    margin-bottom: 2.25rem;
+    margin: 1.25rem auto 2.25rem;
 
-            p{
-                padding-top: 0.5rem;
-                line-height: 1.5rem;
-                letter-spacing: 0.025rem;
-            }
+    max-width: 50rem;
 
-            li {
-                padding-top: 0.5rem;
-                line-height: 1.5rem;
-                letter-spacing: 0.025rem;               
-            }
-        }
+    h2 {
+        padding-bottom:0.25rem;
+        letter-spacing: 0.05rem;
+        text-shadow: 1px 1px 1.5  map-get($colors, 'mid-pink');
+    }
 
-        @include sm {
-            padding:4rem 3rem;
-        }
+    p{
+        padding-top: 0.5rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.025rem;
+    }
 
-       
-        @include lg {
-            padding-left: 4rem;
-            padding-right: 8rem;
-        }
+  
 
-        @include xl {
-            padding: 4rem 15% 4rem 15%;           
-        }           
+    li {    
+        padding-top: 0.5rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.025rem;               
     }
 }
+
+
+
+
+//     .content {
+
+
+
+//         @include sm {
+//             padding:4rem 3rem;
+//         }
+
+       
+//         @include lg {
+//             padding-left: 4rem;
+//             padding-right: 8rem;
+//         }
+
+//         @include xl {
+//             padding: 4rem 15% 4rem 15%;           
+//         }           
+//     }
+// }

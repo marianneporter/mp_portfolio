@@ -35,7 +35,7 @@
         @include sm {
             margin: 0 auto;
             padding-top: 2rem;
-            max-width: 75rem;
+            max-width: 50rem;
             line-height: 3rem;
     
             h1 {
@@ -67,7 +67,7 @@
 
         @include md {
             padding: 2rem;
-            text-align: center;
+    //        text-align: center;
             
 
             p {
