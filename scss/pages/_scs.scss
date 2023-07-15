@@ -24,7 +24,16 @@
     p, li{
         padding-top: 0.6rem;
         line-height: 1.4rem;
-        letter-spacing: 0.025rem;
+        letter-spacing: 0.025rem;       
     }  
+    
+    a {
+        color: white;
+    }
 
+    .treehouse-score {
+        p:last-child {
+            padding-top: 0;
+        }
+    }
 }
