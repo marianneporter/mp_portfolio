@@ -1,11 +1,11 @@
-.main-container.coding {
-    @include background;
+.coding {
 
-    background-color: map-get($colors,"dark-grey");
-    background-blend-mode: multiply;    
+    @include dark-page-base; 
 
-    .content {
-        padding: 2.5rem 1.5rem 1rem 1.5rem;
+    &__examples {
+    
+        max-width: 50rem;
+        margin: 0 auto;         
 
         h1 {
             text-shadow: 1.5px 1.5px 2px  map-get($colors, 'mid-pink');
@@ -14,14 +14,6 @@
         p {
             padding-top: 1rem;
             font-size: 1.1rem;
-        }
-
-        @include lg {
-            padding: 4rem;
-        }
-
-        @include xl {
-            padding: 6rem;
-        }           
+        }   
     }
 }

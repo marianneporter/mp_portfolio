@@ -1,30 +1,11 @@
 .scs {  
-
-    @include main-container;
-
-    background-color: darken( map-get($colors,"dark-grey"), 15%);
-    color: white;  
-    min-height: 100vh;
-    width: 100%;
-    text-align: left;
- 
-    @include lg-content-width;
- 
-    @include md {     
-        @include background;
-        background-blend-mode: multiply; 
-    }
-
-    padding: 5rem 1rem 14rem 1rem;    
-
+    @include dark-page-base;  
 }
-
 
 .scs h1 {    
     text-shadow: 1.5px 1.5px 2px  map-get($colors, 'mid-pink');
     letter-spacing: 0.1rem;  
     margin: 0 auto 0;
-  //  padding-top: 3rem;
     max-width: 50rem;
 }
 
@@ -32,7 +13,6 @@
     margin-top: 1.25rem;
     margin-bottom: 2.25rem;
     margin: 1.25rem auto 2.25rem;
-
     max-width: 50rem;
 
     h2 {
@@ -41,40 +21,10 @@
         text-shadow: 1px 1px 1.5  map-get($colors, 'mid-pink');
     }
 
-    p{
-        padding-top: 0.5rem;
-        line-height: 1.5rem;
+    p, li{
+        padding-top: 0.6rem;
+        line-height: 1.4rem;
         letter-spacing: 0.025rem;
-    }
+    }  
 
-  
-
-    li {    
-        padding-top: 0.5rem;
-        line-height: 1.5rem;
-        letter-spacing: 0.025rem;               
-    }
 }
-
-
-
-
-//     .content {
-
-
-
-//         @include sm {
-//             padding:4rem 3rem;
-//         }
-
-       
-//         @include lg {
-//             padding-left: 4rem;
-//             padding-right: 8rem;
-//         }
-
-//         @include xl {
-//             padding: 4rem 15% 4rem 15%;           
-//         }           
-//     }
-// }
