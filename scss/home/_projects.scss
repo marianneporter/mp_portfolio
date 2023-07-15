@@ -1,5 +1,5 @@
 @mixin projects {
-      // **************************************************************************/
+    // **************************************************************************/
     // scss for project cards group                                             */
     // **************************************************************************/
     display: grid;
@@ -75,19 +75,31 @@
         h3, p, button {
             padding: 0 0.5rem;  
         }
-    
-        button {           
-            height: 3rem;
-            width: 10rem;
-            background-color: #498EDE;
-            color: white;   
-            border: none;
-            border-radius: 0.2rem;
-            font-weight: 600;
-            font-size: 1.1rem;
-            align-self: center;
-            margin-top: 1.25rem;           
-        }
+
+        .btn-area {
+            display: flex;
+            justify-content: space-around;
+
+            a {   
+                display: flex;  
+                justify-content: center;
+                align-items: center;      
+                height: 3rem;
+                width: 10rem;
+                background-color: #498EDE;
+                color: white;   
+                border: none;
+                border-radius: 0.2rem;
+                font-weight: 600;
+                font-size: 1.1rem;
+                align-self: center;
+                margin-top: 1.25rem;           
+            }
+
+            a:last-child {
+                background-color: map-get($colors, dark-pink);
+            }
+        } 
     }
     
     &__card:hover {
