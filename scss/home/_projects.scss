@@ -5,7 +5,8 @@
     display: grid;
     grid-template-columns: 1fr;    
     gap: 2rem;
-    padding: 0 2rem;
+    padding: 0 1rem;
+   
 
     @include md {
         grid-template-columns: 1fr 1fr;
@@ -79,13 +80,15 @@
         .btn-area {
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
 
             a {   
                 display: flex;  
                 justify-content: center;
                 align-items: center;      
-                height: 3rem;
-                width: 10rem;
+                height: 2rem;
+                width:90%;
+
                 background-color: #498EDE;
                 color: white;   
                 border: none;
@@ -93,7 +96,22 @@
                 font-weight: 600;
                 font-size: 1.1rem;
                 align-self: center;
-                margin-top: 1.25rem;           
+
+                &:first-child {
+                    margin-top: 0;     
+                }
+                &:last-child {
+                    margin-top: 0.4rem;
+                }                  
+            }
+
+            @include xs {
+                & * {
+                    height: 3rem;
+                    width: 10rem;      
+                    margin-top: 1.25rem;        
+                }
+  
             }
 
             a:last-child {

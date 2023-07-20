@@ -25,8 +25,18 @@
     
         align-items: center;
 
-        margin-bottom: 10rem;
-        margin-top: auto;
+        margin-bottom: 2rem;
+        margin-top: auto;  
+        min-width: 100vw;
+        min-height: 25rem;
+
+        @include md {
+            min-width: 25rem;
+            margin-bottom: 8rem;
+            margin-top: auto;
+        }
+
+
 
         text-align: center;   
 
@@ -34,15 +44,19 @@
             padding-top: 6rem;
         }
 
-        @include md {
-            bottom: 12rem;
-        } 
+        // @include md {
+        //     bottom: 12rem;
+        // } 
 
         @include md-landscape-phone {
            padding-top: 7rem;         
         }
     
         color: white;
+
+        .h1-cont, .h2-cont, .h3-cont {      
+            text-align: center;
+        }
       
     }  
 
@@ -103,8 +117,6 @@
             text-shadow: 1.5px 1.5px 2px 2px lighten(map-get($colors, 'dark-pink'), 10%);  
         }
 
-
-
         font-size: 1.75rem;
 
         @include md {
@@ -117,8 +129,6 @@
 
         @include lg {
             font-size: 2rem;
-
-
         }
     }
 
