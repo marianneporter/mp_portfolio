@@ -8,7 +8,7 @@ function typewriterAnimation() {
     const devName = "Marianne Porter";
     const role = "Junior Web Developer";
     const area = "Based in Norwich, Norfolk";
-    const timeInterval = 350;
+    const timeInterval = 150;
 
     typewriterEffect(devName,
                     document.querySelector("header .text-container h1"), timeInterval);
