@@ -9,11 +9,8 @@ const overlay = document.querySelector('.overlay');
 /***************************************************************** */
 
 document.addEventListener("DOMContentLoaded", function() {
-    setAsidePosition();
-   
-});
-
-  
+    setAsidePosition();   
+});  
 
 /********************************************************************/
 /*   Event Listeners for menu functionality                         */ 
@@ -21,14 +18,27 @@ document.addEventListener("DOMContentLoaded", function() {
 mobileNavIcon.addEventListener('click', () => {  
     aside.style.left = "0";
     overlay.style.opacity = "80%";
+    mainContainer.style.position = "fixed";
 });
 
-closeNavBtn.addEventListener('click', () => {
-    console.log('close button clicked');
+closeNavBtn.addEventListener('click', () => { 
+    closeSideMenu();
+});
+
+window.addEventListener('resize', () => {  
+    overlay.style.opacity = "0";
+    setAsidePosition();
+});
+
+overlay.addEventListener('click', () => {
+    closeSideMenu();
+})
+
+function closeSideMenu() {
     aside.style.left = "-15rem";
     overlay.style.opacity = 0;
-});
-
+    mainContainer.style.position = "static";
+}
 
 function setAsidePosition() {
 
@@ -42,8 +52,3 @@ function setAsidePosition() {
         closeNavBtn.style.display = 'block';        
     }
 }
-
-window.addEventListener('resize', () => {
-    console.log('resizing!')
-    setAsidePosition();
-})
