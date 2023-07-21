@@ -2,22 +2,22 @@
 .outer-container {
     position: relative;
 
-    .mobile-nav {
-        display: block;
-    }
+    // .mobile-nav {
+    //     display: block;
+    // }
 
-    .aside {
-        display: none;
-    }
+    // .aside {
+    //     display: none;
+    // }
     
-    @include lg {
-        .mobile-nav {
-            display: none;
-        }
-        .aside {
-            display: block;
-        }
-    }
+    // @include lg {
+    //     .mobile-nav {
+    //         display: none;
+    //     }
+    //     .aside {
+    //         display: block;
+    //     }
+    // }
 }
 
 // background image
