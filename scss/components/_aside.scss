@@ -36,6 +36,14 @@
     border-bottom: 0.5px solid lighten(map-get($colors, 'mid-pink'), 20%);
     display: block;
   }
+
+  .aside-active {
+    left: 0;
+  }
+
+  .aside-hidden {
+    left: -8rem;
+  }
   
   /* When you mouse over the navigation links, change their color */
   .aside nav a:hover {

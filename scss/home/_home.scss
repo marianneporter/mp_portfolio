@@ -1,8 +1,8 @@
 .aside { 
-    display: none;
+    left: -8rem;
 
     @include md {
-        display: block;
+        left: 0;
     }
 }
 
