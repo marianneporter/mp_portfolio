@@ -22,7 +22,7 @@
     position: fixed; 
     z-index: 10; 
     top: 0;
-    left: 0;
+  //  left: 0;
     background-color: #111;   
     overflow-x: hidden;  
   }
@@ -42,7 +42,7 @@
   }
 
   .aside-hidden {
-    left: -8rem;
+    left: -15rem;
   }
   
   /* When you mouse over the navigation links, change their color */

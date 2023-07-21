@@ -1,10 +1,10 @@
-.aside { 
-    left: -8rem;
+// .aside { 
+//     left: -15rem;
 
-    @include md {
-        left: 0;
-    }
-}
+//     @include md {
+//         left: 0;
+//     }
+// }
 
 .main-container {    
     @include main-container;
