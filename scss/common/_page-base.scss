@@ -45,6 +45,7 @@
 @mixin main-container {
     @include lg {
         margin-left: 15rem; 
+        transition: margin-left 2000ms ease;
         @include lg-content-width;
     }      
 }
