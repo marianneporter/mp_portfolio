@@ -1,14 +1,13 @@
 .mobile-nav-icon {  
     background-color: white;
     color: black;
-    position: fixed;
+    position: absolute;
     left: 1.5rem;
     top: 1.5rem;   
     font-size: 2rem;
     z-index: 1;
     padding: 0.3rem 0.5rem;
- //   display: none;
-
+    
     @include lg {
         display: none;
     }
