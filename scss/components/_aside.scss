@@ -4,6 +4,8 @@
     width: 100%;
     font-size: 3rem;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
    
     a {
         display: flex;
@@ -13,6 +15,10 @@
         width: 100%;
         color: white;       
         text-shadow: 3px 3px 2px map-get($colors, 'mid-pink');
+    }
+    button {
+        height: 3rem;
+        width: 3rem;        
     }
 }
 
@@ -44,6 +50,8 @@
   .aside-hidden {
     left: -15rem;
   }
+
+  
   
   /* When you mouse over the navigation links, change their color */
   .aside nav a:hover {
