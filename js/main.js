@@ -4,20 +4,14 @@ const mainContainer = document.querySelector('.main-container');
 const aside = document.querySelector('.aside');
 const overlay = document.querySelector('.overlay');
 
-/***************************************************************** */
-/*     code to run when page loaded                                */
-/***************************************************************** */
-
-document.addEventListener("DOMContentLoaded", function() {
-    setAsidePosition();   
-});  
+setAsidePosition();     
 
 /********************************************************************/
 /*   Event Listeners for menu functionality                         */ 
 /*********************************************************************/
 mobileNavIcon.addEventListener('click', () => {  
     aside.style.left = "0";
-    overlay.style.opacity = "80%";
+    overlay.style.opacity = "60%";
     mainContainer.style.position = "fixed";
 });
 
@@ -30,8 +24,10 @@ window.addEventListener('resize', () => {
     setAsidePosition();
 });
 
-overlay.addEventListener('click', () => {
-    closeSideMenu();
+overlay.addEventListener('click', (e) => {  
+    if (e.target.style.opacity !== "0" ) {
+        closeSideMenu();
+    }    
 })
 
 function closeSideMenu() {
@@ -42,13 +38,16 @@ function closeSideMenu() {
 
 function setAsidePosition() {
 
-    if (window.innerWidth > 768) {      
-        aside.style.left = 0;
-        closeNavBtn.style.display = 'none';
+    if (window.innerWidth > 992) {      
+        aside.style.left = 0; 
+        closeNavBtn.style.width = "0";
+        closeNavBtn.style.height = "0";
         overlay.style.opacity = "0";
 
     } else { 
-        aside.style.left = "-15rem";
-        closeNavBtn.style.display = 'block';        
+        aside.style.left = "-15rem"; 
+        closeNavBtn.style.width = "3rem";
+        closeNavBtn.style.height = "3rem";  
+      
     }
 }
