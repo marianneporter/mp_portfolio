@@ -45,11 +45,11 @@ function setAsidePosition() {
 
     if (window.innerWidth > 992) {      
         aside.style.left = 0; 
-        closeNavBtn.style.width = "0";
-        closeNavBtn.style.height = "0";
+        // closeNavBtn.style.width = "0";
+        // closeNavBtn.style.height = "0";
     } else { 
         aside.style.left = "-15rem"; 
-        closeNavBtn.style.width = "3rem";
-        closeNavBtn.style.height = "3rem";        
+        // closeNavBtn.style.width = "3rem";
+        // closeNavBtn.style.height = "3rem";        
     }
 }
