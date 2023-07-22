@@ -11,6 +11,7 @@ setAsidePosition();
 /*********************************************************************/
 mobileNavIcon.addEventListener('click', () => {  
     aside.style.left = "0";
+    overlay.style.zIndex = "1";
     overlay.style.opacity = "60%";
     mainContainer.style.position = "fixed";
 });
@@ -20,7 +21,8 @@ closeNavBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {  
-    overlay.style.opacity = "0";
+    // overlay.style.opacity = "0";
+    // overlay.style.zIndex = '-1';
     setAsidePosition();
 });
 
@@ -33,21 +35,21 @@ overlay.addEventListener('click', (e) => {
 function closeSideMenu() {
     aside.style.left = "-15rem";
     overlay.style.opacity = 0;
+    overlay.style.zIndex = '-1';
     mainContainer.style.position = "static";
 }
 
 function setAsidePosition() {
+    overlay.style.opacity = "0";
+    overlay.style.zIndex = '-1';
 
     if (window.innerWidth > 992) {      
         aside.style.left = 0; 
         closeNavBtn.style.width = "0";
         closeNavBtn.style.height = "0";
-        overlay.style.opacity = "0";
-
     } else { 
         aside.style.left = "-15rem"; 
         closeNavBtn.style.width = "3rem";
-        closeNavBtn.style.height = "3rem";  
-      
+        closeNavBtn.style.height = "3rem";        
     }
 }
