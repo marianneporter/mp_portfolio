@@ -4,52 +4,74 @@ const mainContainer = document.querySelector('.main-container');
 const aside = document.querySelector('.aside');
 const overlay = document.querySelector('.overlay');
 
-setAsidePosition();     
+//setAsidePosition();  
+aside.style.left = window.innerWidth > 992 ? "0" : "-15rem";   
 
 /********************************************************************/
 /*   Event Listeners for menu functionality                         */ 
 /*********************************************************************/
 mobileNavIcon.addEventListener('click', () => {  
-    aside.style.left = "0";
-    overlay.style.zIndex = "1";
-    overlay.style.opacity = "60%";
-    mainContainer.style.position = "fixed";
+    openSideMenu();   
 });
 
 closeNavBtn.addEventListener('click', () => { 
     closeSideMenu();
 });
 
+overlay.addEventListener('click', (e) => {  
+    // if (e.target.style.opacity !== "0" ) {
+    //     closeSideMenu();
+    // }   
+    closeSideMenu(); 
+});
+
 window.addEventListener('resize', () => {  
     // overlay.style.opacity = "0";
     // overlay.style.zIndex = '-1';
-    setAsidePosition();
+    aside.style.left = window.innerWidth > 992 ? "0" : "-15rem";
+    deactivateOverlay();
 });
 
-overlay.addEventListener('click', (e) => {  
-    if (e.target.style.opacity !== "0" ) {
-        closeSideMenu();
-    }    
-})
+function openSideMenu() {
+    aside.style.left = "0";
+    overlay.style.zIndex = "1";
+    overlay.style.opacity = "60%";
+ //   mainContainer.style.marginRight = window.innerWidth - document.body.clientWidth;
+    mainContainer.style.position = "fixed";
+ 
+  
+
+}
 
 function closeSideMenu() {
     aside.style.left = "-15rem";
-    overlay.style.opacity = 0;
-    overlay.style.zIndex = '-1';
+    deactivateOverlay();
+    // overlay.style.opacity = 0;
+    // overlay.style.zIndex = '-1';
+  //  mainContainer.style.marginRight = window.innerWidth - document.body.clientWidth;
     mainContainer.style.position = "static";
 }
 
-function setAsidePosition() {
-    overlay.style.opacity = "0";
-    overlay.style.zIndex = '-1';
+function deactivateOverlay() {
+ 
+    overlay.style.opacity = 0;
+    setTimeout(() => {       
+        overlay.style.zIndex = '-1';
+    }, 2000);
+    
 
-    if (window.innerWidth > 992) {      
-        aside.style.left = 0; 
+  //  if (window.innerWidth > 992) {      
+  //     aside.style.left = 0; 
         // closeNavBtn.style.width = "0";
         // closeNavBtn.style.height = "0";
-    } else { 
-        aside.style.left = "-15rem"; 
+ //   } else { 
+  //      aside.style.left = "-15rem"; 
         // closeNavBtn.style.width = "3rem";
         // closeNavBtn.style.height = "3rem";        
-    }
+ //   }
 }
+
+function activateOverlay() {
+
+}
+
