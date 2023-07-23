@@ -3,8 +3,11 @@ const closeNavBtn =  document.querySelector('.close-nav-btn');
 const mainContainer = document.querySelector('.main-container');
 const aside = document.querySelector('.aside');
 const overlay = document.querySelector('.overlay');
+const nav = document.querySelector('.aside nav');
 
-//setAsidePosition();  
+/*************************************************************** */
+/*  set initial aside menu position.                             */
+/*************************************************************** */
 aside.style.left = window.innerWidth > 992 ? "0" : "-15rem";   
 
 /********************************************************************/
@@ -18,60 +21,47 @@ closeNavBtn.addEventListener('click', () => {
     closeSideMenu();
 });
 
-overlay.addEventListener('click', (e) => {  
-    // if (e.target.style.opacity !== "0" ) {
-    //     closeSideMenu();
-    // }   
+overlay.addEventListener('click', (e) => {    
     closeSideMenu(); 
 });
 
-window.addEventListener('resize', () => {  
-    // overlay.style.opacity = "0";
-    // overlay.style.zIndex = '-1';
+nav.addEventListener('click', () => {
+    if (window.innerWidth <= 991) {
+        closeSideMenu();
+    }    
+})
+
+window.addEventListener('resize', () => {   
     aside.style.left = window.innerWidth > 992 ? "0" : "-15rem";
     deactivateOverlay();
 });
 
+/****************************************************************************/
+/*  functions called by the event handlers to open and close menu and       */
+/*  handle the overlay which covers the rest of the screen when mobile menu */
+/*  is in action                                                            */
+/************************************************************************** */
+
 function openSideMenu() {
     aside.style.left = "0";
-    overlay.style.zIndex = "1";
-    overlay.style.opacity = "60%";
- //   mainContainer.style.marginRight = window.innerWidth - document.body.clientWidth;
+    activateOverlay();  
     mainContainer.style.position = "fixed";
- 
-  
-
 }
 
 function closeSideMenu() {
     aside.style.left = "-15rem";
-    deactivateOverlay();
-    // overlay.style.opacity = 0;
-    // overlay.style.zIndex = '-1';
-  //  mainContainer.style.marginRight = window.innerWidth - document.body.clientWidth;
+    deactivateOverlay();   
     mainContainer.style.position = "static";
 }
 
-function deactivateOverlay() {
- 
+function deactivateOverlay() { 
     overlay.style.opacity = 0;
     setTimeout(() => {       
         overlay.style.zIndex = '-1';
     }, 2000);
-    
-
-  //  if (window.innerWidth > 992) {      
-  //     aside.style.left = 0; 
-        // closeNavBtn.style.width = "0";
-        // closeNavBtn.style.height = "0";
- //   } else { 
-  //      aside.style.left = "-15rem"; 
-        // closeNavBtn.style.width = "3rem";
-        // closeNavBtn.style.height = "3rem";        
- //   }
 }
 
 function activateOverlay() {
-
+    overlay.style.zIndex = "1";
+    overlay.style.opacity = "60%";
 }
-
