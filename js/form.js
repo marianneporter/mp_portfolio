@@ -20,13 +20,7 @@ const emailRegex = /^([a-z\d\.-]+)@([a-z\d]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
         
         let activeFormControl = e.target.parentNode;
         activeFormControl.querySelector('.error-message').innerText = '';
-   //     console.log(activeFormControl);
-
-   //     console.log(activeFormControl.querySelector('input'));
-
-        // if (activeFormControl.querySelector('input').value == '') {
-        //     activeFormControl.querySelector('.error-message').innerText = '';
-        // }
+        activeFormControl.querySelector('')
     })
  
 })
@@ -41,35 +35,45 @@ form.addEventListener('submit', (e) => {
     let firstNameError = textError(firstNameInput.value, 'First Name');
     if (firstNameError) {
         firstNameErrorMsg.textContent = firstNameError;
+        firstNameInput.classList.add('input-error');
     } 
 
     let lastNameError = textError(lastNameInput.value, 'Last Name');
     if (lastNameError) {
         lastNameErrorMsg.textContent = lastNameError;
+        lastNameInput.classList.add('input-error');
     } 
 
     let subjectError = textError(subjectInput.value, 'Subject');
     if (subjectError) {
         subjectErrorMsg.textContent = subjectError;
+        subjectInput.classList.add('input-error');
     } 
     
     let emailError = textError(emailInput.value, 'Email', 6);
     if (emailError) {
         emailErrorMsg.textContent = emailError;
+        emailInput.classList.add('input-error');
     } else  {
-        console.log(emailRegex.test(emailInput.value))
+        if(!emailRegex.test(emailInput.value)) {
+            emailErrorMsg.textContent = 'Please enter a valid email';
+            emailInput.classList.add('input-error');
+        }
     }
     
     let msgError = textError(messageInput.value, 'Message', 10);
     if (msgError) {
         messageErrorMsg.textContent = msgError;
+        messageInput.classList.add('input-error');
     } 
         
     let errorCount = [...allErrors].filter(el => el.innerText != '').length;
 
-   
-    console.log(allErrors);
-    console.log(errorCount);
+    if (errorCount == 0) {
+
+    }
+
+
 })
  
 function textError(input, inputField, minLength=2 ) {
@@ -81,6 +85,12 @@ function textError(input, inputField, minLength=2 ) {
     }
     return null;
 }
+
+// function createSuccessMessage() {
+//     let successMsg = document.createElement('p');
+//     p.textContent = "Thank you for your message. I will contact you soon";
+
+// }
 
 
 

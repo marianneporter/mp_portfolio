@@ -85,6 +85,19 @@
     }
 }
 
+.input-error {
+    border: 0.15rem solid map-get($colors, 'red');   
+}
+
+.error-message {
+    margin-top: 0.2rem;
+    color: map-get($colors, 'red'); 
+    font-size: 0.9rem;
+}
+
+
+
+
 // .contact__form button {/     height: 3rem;
 //     width: 10rem;
 //     background-color: #498EDE;
