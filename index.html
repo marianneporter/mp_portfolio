@@ -131,16 +131,34 @@
                 <section id="contact" class="contact">
                     <h2>Contact me...</h2>
                     <form action="" class="contact__form">
-                        <input type="text" placeholder="First Name*"
-                            name="first-name">
-                        <input type="text" placeholder="Last Name*"
-                            name="last-name">   
-                        <input type="text" placeholder="Email*"
-                            name="email">  
-                        <input type="text" placeholder="Subject*"
-                            name="subject">                      
-                        <textarea placeholder="Your message*"></textarea>
-                        <button type="submit">Submit</button>                                      
+                        <div class="form-control first-name">
+                            <input type="text" placeholder="First Name*"
+                                   class="first-name-input form-input"
+                                   name="first-name" >
+                            <p class="error-message first-name-err-msg"></p>
+                        </div>
+                        <div class="form-control last-name">
+                            <input type="text" placeholder="Last Name*"
+                                   class="last-name-input form-input"
+                                   name="last-name">   
+                            <p class="error-message last-name-err-msg"></p>      
+                        </div>
+                        <div class="form-control email">
+                            <input type="text" placeholder="Email*"
+                                    name="email" class="email-input form-input">  
+                            <p class="error-message email-err-msg"></p>
+                        </div>
+                        <div class="form-control subject">
+                            <input type="text" placeholder="Subject*"
+                                  name="subject" class="subject-input form-input">  
+                            <p class="error-message subject-err-msg"></p>        
+                        </div>
+                        <div class="form-control message">
+                            <textarea class="message-input form-input" 
+                                      placeholder="Your message*"></textarea>   
+                            <p class="error-message message-err-msg"></p>                         
+                        </div>                          
+                        <button type="submit">Submit</button>                                                      
                     </form>
                 </section>    
             </main>
@@ -151,6 +169,7 @@
     <div class="overlay"></div>
  
     <script src="js/home.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/nav.js"></script>
 </body>
 </html>
