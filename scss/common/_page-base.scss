@@ -1,7 +1,10 @@
 // sets up outer relative positioning and which nav to display 
 .outer-container {
-    position: relative;
- 
+    position: relative; 
+}
+
+.resize-transition-stopper * {    
+    transition: none !important;
 }
 
 .overlay {

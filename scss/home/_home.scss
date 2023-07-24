@@ -20,6 +20,7 @@
 
 .contact {
     background-color:  lighten(map-get($colors, "mid-grey"), 25%);   
+    position: relative;
 
     h2 {
         padding-top: 2rem;
@@ -98,7 +99,42 @@
 input:focus, textarea:focus {          
     border: 0.2rem solid map-get($colors, 'dark-pink');         
     outline: none;
-}     
+}   
+
+.popup {
+    // height: 20rem;
+    // width: 20rem;
+    background-color: white;
+    color: map-get($colors, 'dark-pink');
+ //   display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-text {
+    position: relative;
+    border: 2px solid map-get($colors, 'dark-pink');
+    padding: 10rem;
+    h3 {
+        margin-top: 1rem;
+    }
+}
+
+.popup .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+
+}
 
 
 

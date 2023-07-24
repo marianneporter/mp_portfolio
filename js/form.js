@@ -1,4 +1,7 @@
 const form = document.querySelector('.contact__form');
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelector('.contact .popup .popup-text .close-btn')
+
 const firstNameInput = document.querySelector('.first-name-input');
 const lastNameInput = document.querySelector('.last-name-input');
 const emailInput =document.querySelector('.email-input');
@@ -22,6 +25,10 @@ const emailRegex = /^([a-z\d\.-]+)@([a-z\d]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
         activeFormControl.querySelector('.form-input').classList.remove('input-error');       
     })
  
+});
+
+popupClose.addEventListener('click', () => {   
+    popup.style.zIndex = -1;
 })
 
 form.addEventListener('submit', (e) => {
@@ -65,10 +72,13 @@ form.addEventListener('submit', (e) => {
         
     let errorCount = [...allErrors].filter(el => el.innerText != '').length;
 
-    if (errorCount == 0) {
+    if (errorCount == 0) {   
 
+        setTimeout(() => {
+            //temporary timeout to simulate form submit
+            popup.style.zIndex = 9;
+        }, 1000 );
     }
-
 
 })
  
@@ -81,12 +91,6 @@ function textError(input, inputField, minLength=2 ) {
     }
     return null;
 }
-
-// function createSuccessMessage() {
-//     let successMsg = document.createElement('p');
-//     p.textContent = "Thank you for your message. I will contact you soon";
-
-// }
 
 
 
