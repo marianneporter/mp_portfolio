@@ -95,6 +95,11 @@
     font-size: 0.9rem;
 }
 
+input:focus, textarea:focus {          
+    border: 0.2rem solid map-get($colors, 'dark-pink');         
+    outline: none;
+}     
+
 
 
 

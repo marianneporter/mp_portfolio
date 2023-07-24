@@ -16,21 +16,17 @@ const messageErrorMsg = document.querySelector('.message-err-msg');
 const emailRegex = /^([a-z\d\.-]+)@([a-z\d]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
 
 [...allInputs].forEach((el)=> {
-    el.addEventListener( 'input', (e) => {
-        
+    el.addEventListener( 'input', (e) => {        
         let activeFormControl = e.target.parentNode;
         activeFormControl.querySelector('.error-message').innerText = '';
-        activeFormControl.querySelector('')
+        activeFormControl.querySelector('.form-input').classList.remove('input-error');       
     })
  
 })
 
 form.addEventListener('submit', (e) => {
-
-     console.log('form submitted');
-     e.preventDefault();
-
-     console.log(firstNameInput);
+  
+     e.preventDefault();   
 
     let firstNameError = textError(firstNameInput.value, 'First Name');
     if (firstNameError) {
