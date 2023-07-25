@@ -2,13 +2,14 @@
     @include dark-page-base; 
 }
 
+/* wrapper for slick and all of the coding slides */
 .coding-slides-wrapper {
     width: 100%;
     margin: 0 auto;
  //   background-color: blue;   
 
     @media (min-width: 768px) {
-        width: 600px;
+        width: 700px;
         height: 40rem;
         padding-top: 3rem;
         margin: 0 auto;
@@ -16,15 +17,27 @@
     }   
 }
 
+/* wrapper div inside coding-slides-wrapper
+   this is the one used by slick  */
 .coding-slides {
  //   background-color: orange;
 
     @media (min-width: 768px) {
-        width: 350px;
+        width: 600px;
         margin: 0 auto;
     }   
 }
 
+/* wrapper div for one slick slide */
+.coding-slide-wrapper {
+    @media (min-width: 768px) {
+        width: 600px;
+        margin: 0 auto;
+    }   
+}
+
+
+/* wrapper for image code  */
 .coding-image-wrapper {
     height: 20rem;  
     overflow: scroll;   
@@ -35,6 +48,7 @@
     }  
 }
 
+/* image of code */
 .coding-image-wrapper img {
     width: 100%;
 }
