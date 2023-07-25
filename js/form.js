@@ -77,6 +77,11 @@ form.addEventListener('submit', (e) => {
         setTimeout(() => {
             //temporary timeout to simulate form submit
             popup.style.zIndex = 9;
+            firstNameInput.value = '';
+            lastNameInput.value ='';
+            emailInput.value = '';
+            subjectInput.value = '';
+            messageInput.value = '';
         }, 1000 );
     }
 

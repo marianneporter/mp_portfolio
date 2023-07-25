@@ -65,10 +65,34 @@
     background-color: #555;
 }
 
-.slick-prev:before,
-.slick-next:before {
-  color: purple;
-  height: 5rem;
-  width: 5rem;
-  background-color: pink;
+// controls for slick slider
+.slick-prev {
+    left: -5rem;
 }
+
+.slick-next {
+    right: -5rem;
+}
+
+// .slick-prev:before,
+// .slick-next:before {
+//   color: red;
+//   height: 5rem;
+//   width: 5rem;
+//   background-color: transparent;
+   
+// }
+
+.slick-prev:before {
+    font: var(--fa-font-solid);
+    content: "\f104";
+    color: white;
+    font-size: 2rem;
+  }
+  
+  .slick-next:before {
+    font: var(--fa-font-solid);
+    content: "\f105";
+    color: white;
+    font-size: 2rem;
+  }

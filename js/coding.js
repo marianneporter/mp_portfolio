@@ -3,5 +3,5 @@ $('.coding-slides').slick({
     slidersToScroll: 1,
     speed: 300,
     arrows: true,
-    dots: true
+    dots: true,    
 });
