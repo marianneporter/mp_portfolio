@@ -2,7 +2,7 @@
     @include dark-page-base; 
 }
 
-/* wrapper for slick and all of the coding slides */
+/* outer wrapper for slick and all of the coding slides */
 .coding-slides-wrapper {
     width: 100%;
     margin: 0 auto;
@@ -20,7 +20,6 @@
 /* wrapper div inside coding-slides-wrapper
    this is the one used by slick  */
 .coding-slides {
- //   background-color: orange;
 
     @media (min-width: 768px) {
         width: 600px;
