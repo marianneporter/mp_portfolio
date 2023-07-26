@@ -31,7 +31,17 @@
         font-weight: 500;
         width: 15rem;
     }
+}
 
+
+/* wrapper div inside coding-slides-wrapper
+   this is the one used by slick  */
+   .coding-slides {
+
+    @media (min-width: 768px) {
+        width: 37.5rem;
+        margin: 0 auto;
+    }   
 }
 
 /* outer wrapper for slick and all of the coding slides */
@@ -52,15 +62,6 @@
 
 }
 
-/* wrapper div inside coding-slides-wrapper
-   this is the one used by slick  */
-.coding-slides {
-
-    @media (min-width: 768px) {
-        width: 600px;
-        margin: 0 auto;
-    }   
-}
 
 /* wrapper div for one slick slide */
 .coding-slide-wrapper {
@@ -82,7 +83,7 @@
    
 
     @media (min-width: 768px) {
-        width: 600px;
+        width: 37.5rem;
         margin: 0 auto;
     }   
 
@@ -147,7 +148,7 @@
 }
 
 
-/************ Custom Scrollbar Colors *********************/  
+/************ Custom Scrollbar Colors   
 
 /* firefox only */
 .coding-image-wrapper {   
