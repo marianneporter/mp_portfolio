@@ -1,9 +1,12 @@
 .coding {
-    @include dark-page-base;     
+    @include dark-page-base;   
+    
 }
 
 .coding h1 {
     text-shadow: 1.5px 1.5px 2px  map-get($colors, 'mid-pink');
+  
+
     @include md {
         width: 700px;
         margin: 0 auto;
@@ -46,9 +49,9 @@
 
 /* outer wrapper for slick and all of the coding slides */
 .coding-slides-wrapper {
-    width: 100%;
-    height: 50rem;
-    margin: 1rem auto;
+    // width: 100%;
+    // height: 50rem;
+    // margin: 1rem auto;
     
     background-color: black;
  
@@ -58,23 +61,47 @@
         height: 46rem;
         padding-top:2rem;
         margin: 0 auto;
-       }   
+    }   
 
 }
 
 
 /* wrapper div for one slick slide */
 .coding-slide-wrapper {
+
+    
+    padding-top: 1.5rem;
+
+    @include md {
+        padding-top: 0;
+    }
    
 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
-    h2 {
-        margin-bottom: 1rem;
-    }
+    // h2:first-child {
+    //     padding-top: 2rem;
+    //     margin-bottom: 1rem;
+    // }   
+
+   
+
+    // h2:first-child {
+    //     padding-top: 1rem;
+    //     margin-bottom: 1rem;
+    // }
+
+ 
+ 
+
+    // h2:not(:first-child) {
+    //     padding-top: 10rem;
+    //     color: cyan;
+    // }
 
     p {
         margin-top: 0.75rem;
+       
     }
 
     .coding-image-wrapper {
@@ -89,6 +116,14 @@
 
     button {
         color: white;
+    }
+}
+
+.coding-slide-wrapper:not(:first-child) {
+    padding-top: 3rem;
+
+    @include md {
+        padding-top: 0;
     }
 }
 
@@ -110,7 +145,7 @@
     width: 100%;
 }
 
-/*  slick arrows for screens of size 768px and above */
+/*  code for slick slider screen sizes > 767 only */
 @media (min-width: 768px) {
     .slick-prev:before {  
         position: relative;
@@ -129,23 +164,23 @@
         color: white;
         font-size: 2rem;    
     }    
+    /* Slick dots */
+    .slick-dots {
+        bottom: -2.5rem;
+    }
+    
+    .slick-dots li button:before {
+        font-size: 16px;
+        color: lighten(map-get($colors, 'mid-pink'), 40%);
+    }
+    
+    
+    .slick-dots li.slick-active button:before {
+        font-size: 16px;
+        color: lighten(map-get($colors, 'mid-pink'), 35%);
+    }    
 }
 
-/* Slick dots */
-.slick-dots {
-   bottom: -2.5rem;
-}
-
-.slick-dots li button:before {
-    font-size: 16px;
-    color: lighten(map-get($colors, 'mid-pink'), 40%);
-}
-
-
-.slick-dots li.slick-active button:before {
-    font-size: 16px;
-    color: lighten(map-get($colors, 'mid-pink'), 35%);
-}
 
 
 /************ Custom Scrollbar Colors   
