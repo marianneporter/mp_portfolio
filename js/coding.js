@@ -1,8 +1,7 @@
 /************************************************************/
 /*  set up initial state of slick for large screens         */
 /************************************************************/
-if (window.innerWidth > 767) {
-    console.log('setting slick for large screens');
+if (window.innerWidth > 767 && window.innerHeight > 450) {  
     setSlickForLargeScreens();
 }
 
@@ -11,7 +10,7 @@ if (window.innerWidth > 767) {
 /*  entry to page and resize                                            */ 
 /********************************************************************** */
 function setSlickForLargeScreens() {
-    console.log('adding slick for large screens');
+   
     $('.coding-slides').slick({
         dots: true,
         arrows: true,
@@ -23,8 +22,7 @@ function setSlickForLargeScreens() {
 /************************************************************************/
 /* remove slick from smaller screens - used on resize                   */ 
 /********************************************************************** */
-function setNoSlickForSmallScreens() {
-    console.log('removing slick for small screens');
+function setNoSlickForSmallScreens() {  
     $('.coding-slides').slick('unslick');
 }
 
@@ -32,10 +30,12 @@ function setNoSlickForSmallScreens() {
 /* event listener for resize.  adds/removes slick if necessary            */
 /************************************************************************ */
 window.addEventListener("resize", () => {   
-   let slickElement = document.querySelector('.coding-slides');
-   if ( window.innerWidth < 768 && slickElement.classList.contains("slick-slider")) {
+   let  slickElement = document.querySelector('.coding-slides');
+   if ( (   window.innerWidth < 768 || window.innerHeight < 450 )
+        && slickElement.classList.contains("slick-slider")) {
         setNoSlickForSmallScreens();
-   } else if (window.innerWidth >= 768 && !slickElement.classList.contains("slick-slider")) {
+   } else if ((window.innerWidth >= 768 && window.innerHeight > 450)  
+          && !slickElement.classList.contains("slick-slider")) {
         setSlickForLargeScreens();
    }
 });
