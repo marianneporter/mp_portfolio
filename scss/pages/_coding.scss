@@ -51,12 +51,13 @@
 .coding-slides-wrapper {
     
     background-color: black;
- 
+    padding-bottom: 3rem;
 
     @media (min-width: 768px) and (min-height: 450px) {
         width: 700px;
         height: 46rem;
         padding-top:2rem;
+        padding-bottom: 0;
         margin: 0 auto;
     }   
 
