@@ -138,13 +138,13 @@
 
 .slick-dots li button:before {
     font-size: 16px;
-    color: lighten(map-get($colors, 'dark-pink'), 20%);
+    color: lighten(map-get($colors, 'mid-pink'), 40%);
 }
 
 
 .slick-dots li.slick-active button:before {
     font-size: 16px;
-    color: darken(map-get($colors, 'mid-pink'), 10%);
+    color: lighten(map-get($colors, 'mid-pink'), 35%);
 }
 
 
