@@ -40,7 +40,6 @@
         width: 100%;
         max-width: 70rem;
         padding: 0 0 2rem 0; 
-     
 }
 
 .contact__form .form-control {
@@ -102,16 +101,10 @@ input:focus, textarea:focus {
     outline: none;
 }   
 
-.popup {
-    // height: 20rem;
-    // width: 20rem;
+.popup { 
     background-color: white;
-    color: map-get($colors, 'dark-pink');
- //   display: none;
-   position: absolute;
-
-   
-
+    color: map-get($colors, 'dark-pink'); 
+    position: absolute;
    
     top:0;
     left: 0;
