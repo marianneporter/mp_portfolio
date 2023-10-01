@@ -11,7 +11,7 @@
     <div class="outer-container">    
 
         <aside class="aside">
-            <h1><a href="index.html">MP</a><button class="close-nav-btn">X</button></h1>
+            <h1><a href="index.php">MP</a><button class="close-nav-btn">X</button></h1>
 
             <nav class="nav">
                 <a href="about.html">About Me</a>
@@ -130,11 +130,13 @@
                 </div> 
                 <section id="contact" class="contact">
                     <h2>Contact me...</h2>
-                    <form action="" class="contact__form">
+                    <form action="" 
+                          class="contact__form"
+                          id="contact-form">
                         <div class="form-control first-name">
                             <input type="text" placeholder="First Name*"
                                    class="first-name-input form-input"
-                                   name="first-name" >
+                                   name="first-name">
                             <p class="error-message first-name-err-msg"></p>
                         </div>
                         <div class="form-control last-name">
@@ -149,12 +151,15 @@
                             <p class="error-message email-err-msg"></p>
                         </div>
                         <div class="form-control subject">
-                            <input type="text" placeholder="Subject*"
-                                  name="subject" class="subject-input form-input">  
+                            <input type="text"
+                                   placeholder="Subject*"
+                                   name="subject"
+                                   class="subject-input form-input">    
                             <p class="error-message subject-err-msg"></p>        
                         </div>
                         <div class="form-control message">
                             <textarea class="message-input form-input" 
+                                      name="message"
                                       placeholder="Your message*"></textarea>   
                             <p class="error-message message-err-msg"></p>                         
                         </div>                          
@@ -175,6 +180,7 @@
 
     <div class="overlay"></div>
   
+    <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/home.js"></script>
     <script src="js/form.js"></script>
