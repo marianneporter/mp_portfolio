@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="favicon.ico" type="image/ico">  
     <title>Marianne | Portfolio</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
 
             <nav class="nav">
                 <a href="about.html">About Me</a>
-                <a href="index.html#portfolio">My Portfolio</a>
+                <a href="index.php#portfolio">My Portfolio</a>
                 <a href="coding.html">Coding Examples</a>
                 <a href="scs.html">SCS Scheme</a>
-                <a href="index.html#contact">Contact Me</a>
+                <a href="index.php#contact">Contact Me</a>
             </nav>
         </aside>
 

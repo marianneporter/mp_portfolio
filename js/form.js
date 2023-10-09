@@ -53,16 +53,16 @@ form.addEventListener('submit', (e) => {
     //     subjectInput.classList.add('input-error');
     // } 
     
-    let emailError = textError(emailInput.value, 'Email', 6);
-    if (emailError) {
-        emailErrorMsg.textContent = emailError;
-        emailInput.classList.add('input-error');
-    } else  {
-        if(!emailRegex.test(emailInput.value)) {
-            emailErrorMsg.textContent = 'Please enter a valid email';
-            emailInput.classList.add('input-error');
-        }
-    }
+    // let emailError = textError(emailInput.value, 'Email', 6);
+    // if (emailError) {
+    //     emailErrorMsg.textContent = emailError;
+    //     emailInput.classList.add('input-error');
+    // } else  {
+    //     if(!emailRegex.test(emailInput.value)) {
+    //         emailErrorMsg.textContent = 'Please enter a valid email';
+    //         emailInput.classList.add('input-error');
+    //     }
+    // }
     
     // let msgError = textError(messageInput.value, 'Message', 10);
     // if (msgError) {
