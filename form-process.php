@@ -55,7 +55,7 @@
         //     $insertSuccess = false;
         // }  
 
-        $insertSuccess = true; 
+        $insertSuccess = true;       
         
         if ($insertSuccess) {
             $statusMessage = "OK";

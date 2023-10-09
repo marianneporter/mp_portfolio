@@ -1,3 +1,52 @@
+@mixin popup($msg-type: success) {  
+
+    $color-type: map-get($colors, "dark-pink");
+    @if $msg-type == error {
+        $color-type: map-get($colors, 'red'); 
+    }
+    
+    background-color: white;    
+    color: $color-type;
+    position: absolute;
+    
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;        
+    
+    padding: 1rem;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .popup-text {
+        position: relative;
+        border: 2px solid $color-type;
+        padding: 14rem 1rem;
+    
+        @include md {
+            padding: 10rem;
+        }
+    
+        h1 {
+            font-size: 1.75rem;
+        }
+        h3 {
+            padding-top: 3rem;
+            font-size: 1.25rem;
+        }     
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem 1.5rem;
+        font-size: 2rem;    
+    }    
+}  
+
 .main-container {    
     @include main-container;
 }
@@ -99,49 +148,13 @@
 input:focus, textarea:focus {          
     border: 0.2rem solid map-get($colors, 'dark-pink');         
     outline: none;
-}   
+}  
 
-.popup { 
-    background-color: white;
-    color: map-get($colors, 'dark-pink'); 
-    position: absolute;
-   
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;        
-   
-    padding: 1rem;
-    z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.success-popup {
+    @include popup;
 }
 
-.popup-text {
-    position: relative;
-    border: 2px solid map-get($colors, 'dark-pink');
-    padding: 14rem 1rem;
-
-    @include md {
-        padding: 10rem;
-    }
-
-    h1 {
-        font-size: 1.75rem;
-    }
-    h3 {
-        padding-top: 3rem;
-        font-size: 1.25rem;
-    }
- 
+.error-popup {
+    @include popup(error);
 }
 
-.popup .close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 1rem 1.5rem;
-    font-size: 2rem;
-
-}

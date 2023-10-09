@@ -166,11 +166,10 @@
                         </div>                          
                         <button type="submit">Submit</button>                                                      
                     </form>
-                    <div class="popup">
-                       
+                    <div class="popup">                       
                         <div class="popup-text">
-                            <h1>Thank you! </h1>
-                            <h3>Your message has been received successfully</h3>   
+                            <h1></h1>
+                            <h3></h3>   
                             <div class="close-btn">X</div>
                         </div> 
                     </div>

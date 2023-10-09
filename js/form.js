@@ -1,6 +1,9 @@
 const form = document.querySelector('.contact__form');
 const popup = document.querySelector('.popup');
+
 const popupClose = document.querySelector('.contact .popup .popup-text .close-btn')
+const popupHeading = document.querySelector('.popup .popup-text h1');
+const popupMessage = document.querySelector('.popup .popup-text h3');
 
 const firstNameInput = document.querySelector('.first-name-input');
 const lastNameInput = document.querySelector('.last-name-input');
@@ -16,7 +19,6 @@ const subjectErrorMsg = document.querySelector('.subject-err-msg');
 const emailErrorMsg = document.querySelector('.email-err-msg');
 const messageErrorMsg = document.querySelector('.message-err-msg');
 
-//const emailRegex = /^([a-z\d\.-]+)@([a-z\d]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
 const emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
 [...allInputs].forEach((el)=> {
@@ -29,6 +31,7 @@ const emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+
 
 popupClose.addEventListener('click', () => {   
     popup.style.zIndex = -1;
+    popup.style.display = "none";
 })
 
 form.addEventListener('submit', (e) => {
@@ -92,13 +95,13 @@ form.addEventListener('submit', (e) => {
                 } else if (data.statusMessage == "Validation_Errors") {              
                     displayErrorMessages(data.errors);
                 } else {
-                    displaySomethingWentWrong();
+                    handleServerError();
                 }
             },
             error:  function(error)
             {      
                 alert('ajax call failed');
-               // displaySomethingWentWrong();
+                handleServerError();
             }
         });     
     }
@@ -106,7 +109,26 @@ form.addEventListener('submit', (e) => {
 
 
 function handleSuccessfulSubmit() {
+    popup.classList.add("success-popup");  
+    popup.style.display = "flex";
     popup.style.zIndex = 9;
+    popupHeading.textContent = "Thank you!";
+    popupMessage.textContent = "Your message has been received successfully";
+    resetContactForm();
+}
+
+function handleServerError() {
+
+    popup.classList.add("error-popup"); 
+    popup.style.display = "flex";  
+    popup.style.zIndex = 9;
+    popupHeading.textContent = "There was a problem sending your message";
+    popupMessage.textContent 
+         = "Please try later or email Marianne at marianneporter17@gmail.com";
+    resetContactForm();
+}
+
+function resetContactForm() {
     firstNameInput.value = '';
     lastNameInput.value ='';
     emailInput.value = '';
@@ -152,11 +174,6 @@ function displayErrorMessages(errors) {
         messageErrorMsg.textContent = errors.message;
         messageInput.classList.add('input-error');    
     }
-}
-
-
-function displayAjaxCallError() {
-    console.log('something went wrong ajax error');
 }
 
 
