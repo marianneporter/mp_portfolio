@@ -1,6 +1,7 @@
 @mixin popup($msg-type: success) {  
 
     $color-type: map-get($colors, "dark-pink");
+    
     @if $msg-type == error {
         $color-type: map-get($colors, 'red'); 
     }
@@ -26,8 +27,14 @@
         padding: 14rem 1rem;
     
         @include md {
+            padding: 6rem;
+        }
+
+        @include xl {
             padding: 10rem;
         }
+
+        
     
         h1 {
             font-size: 1.75rem;

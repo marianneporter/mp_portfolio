@@ -129,7 +129,7 @@
                         </div>         
                     </section> 
                 </div> 
-                <section id="contact" class="contact">
+                <section id="contact" class="contact" >
                     <h2>Contact me...</h2>
                     <form action="" 
                           class="contact__form"

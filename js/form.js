@@ -32,6 +32,8 @@ const emailRegex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+
 popupClose.addEventListener('click', () => {   
     popup.style.zIndex = -1;
     popup.style.display = "none";
+    popup.style.classList.remove('success-popup');
+    popup.style.classList.remove('error-popup');
 })
 
 form.addEventListener('submit', (e) => {
@@ -147,9 +149,7 @@ function textError(input, inputField, minLength=2 ) {
 };
 
 function displayErrorMessages(errors) {
-    console.log('server error messages');
-    console.log(errors);
-
+  
     if (errors.firstName) {
         firstNameErrorMsg.textContent = errors.firstName;
         firstNameInput.classList.add('input-error');
@@ -175,6 +175,3 @@ function displayErrorMessages(errors) {
         messageInput.classList.add('input-error');    
     }
 }
-
-
-
