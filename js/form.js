@@ -88,7 +88,7 @@ form.addEventListener('submit', (e) => {
             {  
                 alert('ajax call success');
 
-                console.log(response);
+                console.log(JSON.parse(response));
 
                 let data = JSON.parse(response);
               

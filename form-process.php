@@ -42,20 +42,19 @@
     }
 
     if (empty( (array) $errors ))  {  
-
-        // require_once('db/dbConnect.php');
-        // $dbConnection = new DB_Connect();
-        // $db = $dbConnection->CreateConnection();       
-        // if ($db) {        
-        //     require_once('db/dbQueries.php');
-        //     $dbQueries = new DB_Queries();
-        //     $insertSuccess
-        //         = $dbQueries->insertcontactFormData($db, $contactFormData );  
-        // } else {
-        //     $insertSuccess = false;
-        // }  
-
-        $insertSuccess = true;       
+        // attempt db insert for valid form
+        require_once('db/dbConnect.php');
+        $dbConnection = new DB_Connect();
+        $db = $dbConnection->CreateConnection();          
+      
+        if ($db) {        
+            require_once('db/dbQueries.php');
+            $dbQueries = new DB_Queries();
+            $insertSuccess
+                = $dbQueries->insertContactFormData($db, $contactFormData );  
+        } else {
+            $insertSuccess = false;
+        }       
         
         if ($insertSuccess) {
             $statusMessage = "OK";
@@ -64,6 +63,7 @@
         }
    
     } else {
+        //invalid form return validation errors status
         $statusMessage = "Validation_Errors";
     }
 
