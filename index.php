@@ -161,6 +161,7 @@
                         <div class="form-control message">
                             <textarea class="message-input form-input" 
                                       name="message"
+                                      maxlength="500"
                                       placeholder="Your message*"></textarea>   
                             <p class="error-message message-err-msg"></p>                         
                         </div>                          

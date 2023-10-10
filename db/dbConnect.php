@@ -32,13 +32,12 @@
 		}
 
         private function getDBCredentials() {
-            // if ( $_SERVER['SERVER_NAME'] == 'localhost') {
-            //     [ $host, $dbName, $username, $password ] = self::getLocalhostDets();   
-            // } else {
-            //    get cpanel db details          
-            // }
 
-            [ $host, $dbName, $username, $password ] = self::getLocalhostDets();       
+            if ( $_SERVER['SERVER_NAME'] == 'localhost') {
+                [ $host, $dbName, $username, $password ] = self::getLocalhostDets();   
+            } else {
+                [ $host, $dbName, $username, $password ] = self::getCPanelDets();   
+            }              
 
             return [ $host, $dbName, $username, $password];  			                  
         }
@@ -51,5 +50,15 @@
 
             return [ $host, $dbName, $username, $password];                        
         }
+ 
+        private function getCPanelDets() {
+            $host =   "localhost";
+            $dbName = "marianne_portfolio";
+            $username = "marianne_portfolio_user";
+            $password = "hE7pHi3T^)hl";
+
+            return [ $host, $dbName, $username, $password];                        
+        }
+
 
 	}
