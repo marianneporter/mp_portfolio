@@ -3,16 +3,19 @@
     require_once 'includes/utilities.php';
     require_once 'includes/constants.php';
 
+    //create a sanitized ContactForm Object from $_POST data
     $contactFormData = new ContactForm;
-
     $contactFormData->firstName = sanitizeString($_POST['first-name']);
     $contactFormData->lastName  = sanitizeString($_POST['last-name']);
     $contactFormData->email     = sanitizeEmail($_POST['email']);
     $contactFormData->subject   = sanitizeString($_POST['subject']);    
     $contactFormData->message   = sanitizeString($_POST['message']); 
    
+    //validate sanitized data
     $errors = validationErrors($contactFormData);
 
+    //check if validation passed or failed and process accordingly
+  
     if (empty( (array) $errors ))  {  
         // attempt db insert for valid form
         require_once('db/dbConnect.php');
@@ -39,6 +42,7 @@
         $statusMessage = "Validation_Errors";
     }
 
+    // build object to return to AJAX call
     $returnValue = new StdClass();
     $returnValue->statusMessage = $statusMessage;
     $returnValue->errors = $errors;
