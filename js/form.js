@@ -86,11 +86,8 @@ form.addEventListener('submit', (e) => {
             data: dataString,
             success:  function(response)
             {  
-                alert('ajax call success');
 
-                console.log(JSON.parse(response));
-
-                let data = JSON.parse(response);
+                 let data = JSON.parse(response);
               
                 if (data.statusMessage == "OK") {
                     handleSuccessfulSubmit();
@@ -101,8 +98,7 @@ form.addEventListener('submit', (e) => {
                 }
             },
             error:  function(error)
-            {      
-                alert('ajax call failed');
+            {    
                 handleServerError();
             }
         });     
