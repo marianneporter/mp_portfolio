@@ -28,27 +28,9 @@
                         </div>         
                                  
                     </div>
+
                     <div class="coding-slide-wrapper">
-                        <h2>Example 2: Portfolio - CSS -  Custom Scroll Bars</h2>
-                        <div class="description">
-                            <p>Here is the code for the dark color scrollbars of the coding example window on this page.</p>
-                            <p>Custom scrollbars are not a standard feature of css at present so browsers have to be targeted separately.</p>
-                            <p>My first selector is for the Firefox browser. This is likely to become the future standard.</p>  
-                            <p>The following selectors target the Webkit browser engines used by Chrome, Safari and Edge.</p>   
-                        </div>                            
-                        <div class="coding-image-wrapper">
-                            <img src="assets/images/code_examples/scrollbars.png" alt="">
-                        </div>   
-                        <div class="coding-btn-wrapper">
-                            <a class="coding-button"
-                                href="https://github.com/marianneporter/mp_portfolio"
-                                target="_blank">
-                                View Full Code on Github
-                            </a>
-                        </div>                                    
-                    </div>   
-                    <div class="coding-slide-wrapper">
-                        <h2>Example 3: Portfolio - PHP - Server side handling of contact form received via AJAX request</h2>
+                        <h2>Example 2: Portfolio - PHP - Server side handling of contact form received via AJAX request</h2>
                         <div class="description">                         
                             <p>The processing of the form goes through four stages:</p>
                             <p>1. Sanitizing the data from the $_POST and storing it as a ContactForm object</p>  
@@ -68,7 +50,27 @@
                                 View Full Code on Github
                             </a>
                         </div>                                    
-                    </div>                                   
+                    </div>  
+                    <div class="coding-slide-wrapper">
+                        <h2>Example 3: Portfolio - CSS -  Custom Scroll Bars</h2>
+                        <div class="description">
+                            <p>Here is the code for the dark color scrollbars of the coding example window on this page.</p>
+                            <p>Custom scrollbars are not a standard feature of css at present so browsers have to be targeted separately.</p>
+                            <p>My first selector is for the Firefox browser. This is likely to become the future standard.</p>  
+                            <p>The following selectors target the Webkit browser engines used by Chrome, Safari and Edge.</p>   
+                        </div>                            
+                        <div class="coding-image-wrapper">
+                            <img src="assets/images/code_examples/scrollbars.png" alt="">
+                        </div>   
+                        <div class="coding-btn-wrapper">
+                            <a class="coding-button"
+                                href="https://github.com/marianneporter/mp_portfolio"
+                                target="_blank">
+                                View Full Code on Github
+                            </a>
+                        </div>                                    
+                    </div>                       
+                    
                 </div>  
             </div>    
         </div>
