@@ -20,6 +20,7 @@
                 <a href="coding.html">Coding Examples</a>
                 <a href="scs.html">SCS Scheme</a>
                 <a href="index.php#contact">Contact Me</a>
+                <a href="https://github.com/marianneporter" target="_blank">My Github</a>
             </nav>
         </aside>
 
