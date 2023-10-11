@@ -40,55 +40,55 @@ form.addEventListener('submit', (e) => {
   
      e.preventDefault();   
 
-    // let firstNameError = textError(firstNameInput.value, 'First Name');
-    // if (firstNameError) {
-    //     firstNameErrorMsg.textContent = firstNameError;
-    //     firstNameInput.classList.add('input-error');
-    // } 
+    let firstNameError = textError(firstNameInput.value, 'First Name');
+    if (firstNameError) {
+        firstNameErrorMsg.textContent = firstNameError;
+        firstNameInput.classList.add('input-error');
+    } 
 
-    // let lastNameError = textError(lastNameInput.value, 'Last Name', 2);
-    // if (lastNameError) {
-    //     lastNameErrorMsg.textContent = lastNameError;
-    //     lastNameInput.classList.add('input-error');
-    // } 
+    let lastNameError = textError(lastNameInput.value, 'Last Name', 2);
+    if (lastNameError) {
+        lastNameErrorMsg.textContent = lastNameError;
+        lastNameInput.classList.add('input-error');
+    } 
 
-    // let subjectError = textError(subjectInput.value, 'Subject');
-    // if (subjectError) {
-    //     subjectErrorMsg.textContent = subjectError;
-    //     subjectInput.classList.add('input-error');
-    // } 
+    let subjectError = textError(subjectInput.value, 'Subject');
+    if (subjectError) {
+        subjectErrorMsg.textContent = subjectError;
+        subjectInput.classList.add('input-error');
+    } 
     
-    // let emailError = textError(emailInput.value, 'Email', 6);
-    // if (emailError) {
-    //     emailErrorMsg.textContent = emailError;
-    //     emailInput.classList.add('input-error');
-    // } else  {
-    //     if(!emailRegex.test(emailInput.value)) {
-    //         emailErrorMsg.textContent = 'Please enter a valid email';
-    //         emailInput.classList.add('input-error');
-    //     }
-    // }
+    let emailError = textError(emailInput.value, 'Email', 6);
+    if (emailError) {
+        emailErrorMsg.textContent = emailError;
+        emailInput.classList.add('input-error');
+    } else  {
+        if(!emailRegex.test(emailInput.value)) {
+            emailErrorMsg.textContent = 'Please enter a valid email';
+            emailInput.classList.add('input-error');
+        }
+    }
     
-    // let msgError = textError(messageInput.value, 'Message', 10);
-    // if (msgError) {
-    //     messageErrorMsg.textContent = msgError;
-    //     messageInput.classList.add('input-error');
-    // } 
+    let msgError = textError(messageInput.value, 'Message', 10);
+    if (msgError) {
+        messageErrorMsg.textContent = msgError;
+        messageInput.classList.add('input-error');
+    } 
         
     let errorCount = [...allErrors].filter(el => el.innerText != '').length;
 
     if (errorCount == 0) {   
         let dataString = $('#contact-form').serialize();
-
+ 
         $.ajax({
             type: "POST",
             url: "form-process.php",
+            cache: false,
             data: dataString,
             success:  function(response)
             {  
-
-                 let data = JSON.parse(response);
-              
+                let data = JSON.parse(response);
+ 
                 if (data.statusMessage == "OK") {
                     handleSuccessfulSubmit();
                 } else if (data.statusMessage == "Validation_Errors") {              
@@ -98,7 +98,7 @@ form.addEventListener('submit', (e) => {
                 }
             },
             error:  function(error)
-            {    
+            {             
                 handleServerError();
             }
         });     

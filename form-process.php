@@ -11,35 +11,7 @@
     $contactFormData->subject   = sanitizeString($_POST['subject']);    
     $contactFormData->message   = sanitizeString($_POST['message']); 
    
-    $errors = new stdClass();
-
-    if ($contactFormData->firstName == '') {
-        $errors->firstName = "Please enter your first name";  
-    }
-
-    if ($contactFormData->lastName == '') {
-        $errors->lastName = "Please enter your last name";  
-    } else {
-        if (strlen($contactFormData->lastName) < 2 ) {
-            $errors->lastName = "Last Name must be at least 2 characters in length";
-        }
-    }
-
-    if ($contactFormData->email == '') {
-        $errors->email = 'Please enter your email';        
-    } else if(!preg_match( EMAIL_REGEX, $contactFormData->email)) {
-        $errors->email = "Please enter a valid email";
-    }  
-   
-    if ($contactFormData->subject == '') {
-        $errors->subject = 'Please enter a subject';   
-    }
-
-    if ($contactFormData->message == '') {
-        $errors->message = "Please enter a message";         
-    } else if (strlen($contactFormData->message) < 10) {
-        $errors->message = "Message must be at least 10 characters in length";
-    }
+    $errors = validationErrors($contactFormData);
 
     if (empty( (array) $errors ))  {  
         // attempt db insert for valid form
@@ -72,3 +44,39 @@
     $returnValue->errors = $errors;
 
     echo json_encode($returnValue);
+
+  
+    function validationErrors($contactFormData) {
+        $errors = new stdClass();
+
+        if ($contactFormData->firstName == '') {
+            $errors->firstName = "Please enter your first name";  
+        }
+    
+        if ($contactFormData->lastName == '') {
+            $errors->lastName = "Please enter your last name";  
+        } else {
+            if (strlen($contactFormData->lastName) < 2 ) {
+                $errors->lastName = "Last Name must be at least 2 characters in length";
+            }
+        }
+    
+        if ($contactFormData->email == '') {
+            $errors->email = 'Please enter your email';        
+        } else if(!preg_match( EMAIL_REGEX, $contactFormData->email)) {
+            $errors->email = "Please enter a valid email";
+        }  
+       
+        if ($contactFormData->subject == '') {
+            $errors->subject = 'Please enter a subject';   
+        }
+    
+        if ($contactFormData->message == '') {
+            $errors->message = "Please enter a message";         
+        } else if (strlen($contactFormData->message) < 10) {
+            $errors->message = "Message must be at least 10 characters in length";
+        }
+
+        return $errors;
+    
+    }
