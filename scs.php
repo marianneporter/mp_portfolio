@@ -9,22 +9,8 @@
 </head>
 <body>
     <div class="outer-container">
-        <aside class="aside">
-            <h1><a href="index.html">MP</a><button class="close-nav-btn">X</button></h1>
-            <nav class="nav">
-                <a href="about.html">About Me</a>
-                <a href="index.html#portfolio">My Portfolio</a>
-                <a href="coding.html">Coding Examples</a>
-                <a href="scs.html">SCS Scheme</a>
-                <a href="index.html#contact">Contact Me</a>
-            </nav>
-        </aside>
-    
-        <nav class="mobile-nav-icon">
-            <div class="icon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </nav>
+
+        <?php require_once "includes/nav.php" ?>
                
         <div class="scs">
           
