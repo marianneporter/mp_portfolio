@@ -46,7 +46,29 @@
                                 View Full Code on Github
                             </a>
                         </div>                                    
-                    </div>               
+                    </div>   
+                    <div class="coding-slide-wrapper">
+                        <h2>Example 3: Portfolio - PHP - Server side handling of contact form received via AJAX request</h2>
+                        <div class="description">                         
+                            <p>The processing of the form goes through four stages:</p>
+                            <p>1. Sanitizing the data from the $_POST and storing it as a ContactForm object</p>  
+                            <p>2. Validation of the ContactForm object </p>   
+                            <p>3. Inserting the ContactForm data into the database via PDO</p>
+                            <p>4. Returning an object in JSON format, containing a status message indicating OK, Validation_Errors of DB_Error
+                                  plus a nested object which contains the error messages to be returned to AJAX.
+                            </p>
+                        </div>                            
+                        <div class="coding-image-wrapper">
+                            <img src="assets/images/code_examples/phpFormProcess.png" alt="">
+                        </div>   
+                        <div class="coding-btn-wrapper">
+                            <a class="coding-button"
+                                href="https://github.com/marianneporter/mp_portfolio"
+                                target="_blank">
+                                View Full Code on Github
+                            </a>
+                        </div>                                    
+                    </div>                                   
                 </div>  
             </div>    
         </div>

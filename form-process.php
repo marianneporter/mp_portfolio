@@ -47,6 +47,7 @@
     $returnValue->statusMessage = $statusMessage;
     $returnValue->errors = $errors;
 
+    // echo the return object back to AJAX call in JSON format.
     echo json_encode($returnValue);
 
   
