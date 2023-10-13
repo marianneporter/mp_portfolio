@@ -5,14 +5,14 @@
     
     class ContactForm {
  
-        public $firstName;
-        public $lastName;
+        public $name;
+        public $companyName;
         public $email;    
         public $subject;
         public $message;
 
-        function __construct($firstName="",
-                             $lastName="",
+        function __construct($name="",
+                             $companyName="",
                              $email="",                           
                              $subject="",
                              $message="") {   

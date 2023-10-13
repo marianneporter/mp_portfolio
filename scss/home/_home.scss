@@ -17,7 +17,6 @@
     
     padding: 1rem;
  
- //   display: flex;
     align-items: center;
     justify-content: center;
 
@@ -131,7 +130,7 @@
 }
 
 @include lg {
-    .form-control.first-name, .form-control.last-name {   
+    .form-control.name, .form-control.company-name {   
         width:calc(45% - 0.5rem);      
     }
 }

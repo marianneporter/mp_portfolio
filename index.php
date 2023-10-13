@@ -62,17 +62,17 @@
                     <form action="" 
                           class="contact__form"
                           id="contact-form">
-                        <div class="form-control first-name">
-                            <input type="text" placeholder="First Name*"
-                                   class="first-name-input form-input"
-                                   name="first-name">
-                            <p class="error-message first-name-err-msg"></p>
+                        <div class="form-control name">
+                            <input type="text" placeholder="Your Name*"
+                                   class="name-input form-input"
+                                   name="name">
+                            <p class="error-message name-err-msg"></p>
                         </div>
-                        <div class="form-control last-name">
-                            <input type="text" placeholder="Last Name*"
-                                   class="last-name-input form-input"
-                                   name="last-name">   
-                            <p class="error-message last-name-err-msg"></p>      
+                        <div class="form-control company-name">
+                            <input type="text" placeholder="Company Name"
+                                   class="company-name-input form-input"
+                                   name="company-name">   
+                            <p class="error-message company-name-err-msg"></p>      
                         </div>
                         <div class="form-control email">
                             <input type="text" placeholder="Email*"

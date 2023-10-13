@@ -5,8 +5,8 @@
 
     //create a sanitized ContactForm Object from $_POST data
     $contactFormData = new ContactForm;
-    $contactFormData->firstName = sanitizeString($_POST['first-name']);
-    $contactFormData->lastName  = sanitizeString($_POST['last-name']);
+    $contactFormData->name = sanitizeString($_POST['name']);
+    $contactFormData->companyName  = sanitizeString($_POST['company-name']);
     $contactFormData->email     = sanitizeEmail($_POST['email']);
     $contactFormData->subject   = sanitizeString($_POST['subject']);    
     $contactFormData->message   = sanitizeString($_POST['message']); 
@@ -54,16 +54,8 @@
     function validationErrors($contactFormData) {
         $errors = new stdClass();
 
-        if ($contactFormData->firstName == '') {
-            $errors->firstName = "Please enter your first name";  
-        }
-    
-        if ($contactFormData->lastName == '') {
-            $errors->lastName = "Please enter your last name";  
-        } else {
-            if (strlen($contactFormData->lastName) < 2 ) {
-                $errors->lastName = "Last Name must be at least 2 characters in length";
-            }
+        if ($contactFormData->name == '') {
+            $errors->name = "Please enter your first name";  
         }
     
         if ($contactFormData->email == '') {
