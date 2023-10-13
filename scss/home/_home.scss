@@ -16,8 +16,8 @@
     bottom: 0;        
     
     padding: 1rem;
-    z-index: -1;
-    display: flex;
+ 
+ //   display: flex;
     align-items: center;
     justify-content: center;
 
@@ -157,11 +157,16 @@ input:focus, textarea:focus {
     outline: none;
 }  
 
+.popup {
+    z-index: -1;
+    display: none;
+}
+
 .success-popup {
-    @include popup;
+    @include popup; 
 }
 
 .error-popup {
-    @include popup(error);
+    @include popup(error);   
 }
 
