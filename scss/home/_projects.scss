@@ -19,7 +19,8 @@
     }   
                   
     @include xl {
-        grid-template-columns: 1fr 1fr 1fr;  
+        // increase back to 3 rows when more projects.
+        grid-template-columns: 1fr 1fr;  
         margin-left: 5%;
         margin-right: 5%;
     }

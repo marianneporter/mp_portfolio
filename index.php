@@ -55,54 +55,6 @@
                                 <a href="https://github.com/marianneporter/javascript-photos-array">Github Repo</a>      
                            </div>                
                         </div>   
-                        <div class="projects__card">
-                            <div class="img-wrapper">
-                                <img src="assets/images/placeholder-600x400.png" 
-                                    alt="link to netmatters website reflection project">
-                            </div>
-                            <h3>Project 3</h3>
-                            <p>TBA</p>
-                            <div class="btn-area">
-                                <a href="#" >View Project</a>  
-                                <a href="#">Github Repo</a>       
-                           </div>                
-                        </div>                  
-                        <div class="projects__card">
-                            <div class="img-wrapper">
-                                <img src="assets/images/placeholder-600x400.png" 
-                                    alt="link to netmatters website reflection project">
-                            </div>
-                            <h3>Project 4</h3>
-                            <p>TBA</p>
-                            <div class="btn-area">
-                                <a href="#">View Project</a>  
-                                <a href="#">Github Repo</a>       
-                           </div>                  
-                        </div>                       
-                        <div class="projects__card">
-                            <div class="img-wrapper">
-                                <img src="assets/images/placeholder-600x400.png" 
-                                    alt="link to netmatters website reflection project">
-                            </div>
-                            <h3>Project 5</h3>
-                            <p>TBA</p>
-                            <div class="btn-area">
-                                <a href="#">View Project</a>    
-                                <a href="#">Github Repo</a>     
-                           </div>                  
-                        </div>           
-                        <div class="projects__card">
-                            <div class="img-wrapper">
-                                <img src="assets/images/placeholder-600x400.png" 
-                                    alt="link to netmatters website reflection project">
-                            </div>
-                            <h3>Project 6</h3>
-                            <p>TBA</p>
-                            <div class="btn-area">
-                                <a href="#">View Project</a>  
-                                <a href="#">Github Repo</a>       
-                           </div>                
-                        </div>         
                     </section> 
                 </div> 
                 <section id="contact" class="contact" >
