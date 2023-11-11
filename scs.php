@@ -16,18 +16,6 @@
                     <p> The course is intensive and therefore the level of learning achieved is extensive in a short space of time.</p>            
                 </article>
                 <article>
-                    <h2>Treehouse</h2>
-                    <p>Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS   development, data analysis, and more.</p>
-                    <p> By completing courses users can earn points, allowing them to track their progress and see how much they've covered 
-                        in certain areas.</p>            
- 
-
-                    <div class="treehouse-score">
-                        <p>Total Score: 6007</p>
-                        <p><a href="https://teamtreehouse.com/profiles/marianneporter4" target="_blank" >Check my Treehouse Profile</a></p>
-                    </div>
-                </article>
-                <article>
                     <h2>About Netmatters</h2>
                     <ul>
                         <li>Established in 2008</li>
