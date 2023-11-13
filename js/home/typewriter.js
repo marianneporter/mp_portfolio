@@ -38,6 +38,4 @@ function typewriterAnimation() {
             }, timeInterval * letterCount);       
         }
     }
-
-
 }
