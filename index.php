@@ -37,8 +37,9 @@
                             <div class="back">
                                 <h3 class="">Sunnyview Stables</h3>
                                 <section class="icon-group">
-                                    <img class="img-icon" src="assets/images/icons/vue-js-icon.svg" alt="">
+                                    <img class="img-icon" src="assets/images/icons/vue-js-icon.svg" alt="">                                  
                                     <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="">
+                                    <img class="img-icon" src="assets/images/icons/typescript.png" alt=""> 
                                     <img class="img-icon" src="assets/images/icons/c-sharp.svg" alt="C# icon">
                                     <img class="img-icon" src="assets/images/icons/icons8-microsoft-sql-server.svg" alt="SQL Server Icon">      
                                     <img class="img-icon" src="assets/images/icons/icons8-angular.svg" alt="Angular Icon">    
@@ -61,7 +62,7 @@
                                         <a href="https://sunnystablesvueapp.z33.web.core.windows.net" target="_blank">Vue.js</a>
                                         <a href="https://sunnystables.azurewebsites.net" target="_blank">Angular</a>
                                     </div>
-                                    <h4 class="demo-user">Demo User Id and Password: demo@sunnystables.com/demo1234!*</h4>
+                                    <h4 class="demo-user">Demo User Id and Password: demo@sunnystables.com/Demo1234!*</h4>
                                 </section>    
                                 
                                 <button class="toggle-btn back-toggle">Back to summary</button>                      
@@ -90,8 +91,7 @@
                                     <img class="img-icon" src="assets/images/icons/icons8-bootstrap.svg" alt="mySQL Icon">                                  
                                     <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="JavaScript Icon">                           
                                     <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="">
-                                    <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="">                   
-                                    <img class="img-icon" src="assets/images/icons/sass-icon.svg" alt="">
+                                    <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="">                        
                                 </section>          
                                 <section class="github">
                                     <h4 class="sub-heading">Github</h4>
@@ -112,7 +112,7 @@
                                             Laravel App
                                         </a>
                                     </div>
-                                    <h4 class="demo-user">Demo User Id and Password: demo@cats.com/demo1234!*</h4>
+                                    <h4 class="demo-user">Demo User Id and Password: demo@cats.com/Demo1234!*</h4>
                                 </section>
 
                                 <button class="toggle-btn back-toggle">Back to summary</button>                                 

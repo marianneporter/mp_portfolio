@@ -4,17 +4,28 @@
     // **************************************************************************/
     display: grid;
     grid-template-columns: 1fr;    
-    grid-auto-rows:28rem;
+
+    grid-auto-rows: 28rem;   
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0 1rem;   
+
+
+    @include sm {   
+        margin-left: 20%;
+        margin-right: 20%;
+    }
    
 
     @include md {
         grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 27rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }   
 
     @include lg {
         grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 26rem;
         margin-left: 2rem;
         margin-right: 2rem;       
     }   
@@ -22,6 +33,7 @@
     @include xl {
         // increase back to 3 rows when more projects.
         grid-template-columns: 1fr 1fr;  
+        grid-auto-rows: 28rem;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -37,8 +49,8 @@
     // ***************************************************************************/
     &__card {
         position: relative;
-        text-align: center;      
-        height: 28rem;      
+        text-align: center;     
+     
         box-shadow: 0 0 10px 0 #A3ABBD;
     }
 
@@ -58,7 +70,7 @@
             border-radius: 0.2rem;
             color: white;
             position: absolute;
-            bottom: 2rem;
+            bottom: 1.5rem;
             left: calc(50% - 6.25rem);
         }
 
