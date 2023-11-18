@@ -190,7 +190,7 @@
                                 <section class="apps">
                                     <h4 class="sub-heading">Applications</h4>
                                     <div class="apps-link-group">                                     
-                                        <a href="https://js-array.marianne-porter.netmatters-scs.co.uk/" target="_blank">App</a>
+                                        <a href="https://js-array.marianne-porter.netmatters-scs.co.uk/" target="_blank">View App</a>
                                     </div>                            
                                 </section>
 
