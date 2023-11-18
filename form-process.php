@@ -1,4 +1,10 @@
 <?php
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;    
+    require_once 'vendor/autoload.php';   
+
+    require_once 'includes/EmailCredentials.php';
     require_once 'includes/ContactForm.php';
     require_once 'includes/utilities.php';
     require_once 'includes/constants.php';
@@ -18,23 +24,29 @@
   
     if (empty( (array) $errors ))  {  
         // attempt db insert for valid form
-        require_once('db/dbConnect.php');
-        $dbConnection = new DB_Connect();
-        $db = $dbConnection->CreateConnection();          
+        // require_once('db/dbConnect.php');
+        // $dbConnection = new DB_Connect();
+        // $db = $dbConnection->CreateConnection();          
       
-        if ($db) {        
-            require_once('db/dbQueries.php');
-            $dbQueries = new DB_Queries();
-            $insertSuccess
-                = $dbQueries->insertContactFormData($db, $contactFormData );  
-        } else {
-            $insertSuccess = false;
-        }       
+        // if ($db) {        
+        //     require_once('db/dbQueries.php');
+        //     $dbQueries = new DB_Queries();
+        //     $insertSuccess
+        //         = $dbQueries->insertContactFormData($db, $contactFormData );  
+        // } else {
+        //     $insertSuccess = false;
+        // }       
         
-        if ($insertSuccess) {
+        // if ($insertSuccess) {
+        //     $statusMessage = "OK";
+        // } else {
+        //     $statusMessage = "DB_Error";
+        // }
+
+        if (sendContactEmail($contactFormData)) {
             $statusMessage = "OK";
         } else {
-            $statusMessage = "DB_Error";
+            $statusMessage = "EmailError";
         }
    
     } else {
@@ -76,4 +88,68 @@
 
         return $errors;
     
+    }
+
+    function sendContactEmail($contact) {
+         //Create Email Credentials
+        $emailCreds = new EmailCredentials();
+
+        //Create a new PHPMailer instance
+
+        $mail = new PHPMailer(); 
+        $mail->isSMTP();
+
+        //Set the hostname of the mail server
+        $mail->Host = 'smtp.gmail.com'; 
+        $mail->Port = 465;
+
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+
+        //Whether to use SMTP authentication
+        $mail->SMTPAuth = true;
+
+        //Username to use for SMTP authentication 
+        $mail->Username = $emailCreds->addressFrom;
+
+        //Password to use for SMTP authentication
+        $mail->Password = $emailCreds->emailPW;
+        
+        //Set who the message is to be sent from   
+        $mail->setFrom($emailCreds->addressFrom, 'Marianne Porter');
+
+        //Set an alternative reply-to address
+        //This is a good place to put user-submitted addresses
+        $mail->addReplyTo($contact->email, $contact->name);
+
+        //Set who the message is to be sent to
+        $mail->addAddress($emailCreds->addressTo, 'Marianne Porter'); 
+
+        //Set the subject line
+        $mail->Subject = 'Portfolio Contact Form';   
+    
+        $mail->Body = createHTMLMessage($contact);   
+
+        $mail->AltBody =  createPlainTextMessage($contact); 
+
+        return $mail->send();
+    }
+
+    function createHTMLMessage($contact) {
+        $message  = '<h3>From: '  . $contact->name . '</h3>';
+        $message .= '<h3>Company Name: ' . $contact->companyName;
+        $message .= '<h3>Email: ' . $contact->email . '</h3>';      
+        $message .= '<h3>Subject: ' . $contact->subject . '</h3>';
+        $message .= '<h4>Message</h4>';
+        $message .= '<p>' . $contact->message . '</p>';
+        return $message;
+     }
+    
+     function createPlainTextMessage($contact) {
+        $message = "\r \n From: "  . $contact->name;
+        $message = "\r \n From: "  . $contact->companyName;
+        $message .= "\r \n Email: " . $contact->email;      
+        $message .= '\r \n Subject: ' . $contact->subject;
+        $message .= '\r\n Message \r\n';
+        $message .= $contact->message;
+        return $message;
     }

@@ -2,3 +2,5 @@ css/
 .vscode/
 slick/
 js/jquery-3.7.0.min.js
+vendor/
+includes/config.php

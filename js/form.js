@@ -71,7 +71,7 @@ function handleFormSubmit() {
         cache: false,
         data: dataString,
         success:  function(response)
-        {  
+        {           
             let data = JSON.parse(response);
 
             if (data.statusMessage == "OK") {
@@ -79,6 +79,7 @@ function handleFormSubmit() {
             } else if (data.statusMessage == "Validation_Errors") {              
                 displayServerErrorMessages(data.errors);
             } else {
+                // problem with sending email
                 handleServerError();
             }
         },
@@ -128,7 +129,7 @@ function handleSuccessfulServerSubmit() {
     popup.style.display = "flex";
     popup.style.zIndex = 9;
     popupHeading.textContent = "Thank you!";
-    popupMessage.textContent = "Your message has been received successfully";
+    popupMessage.textContent = "Your message has been sent successfully";
     resetContactForm();
 }
 
