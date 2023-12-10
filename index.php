@@ -151,7 +151,7 @@
                                 <section class="apps">
                                     <h4 class="sub-heading">Application</h4>
                                     <div class="apps-link-group">                                     
-                                        <a href="https://netmatters.marianne-porter.netmatters-scs.co.uk/" target="_blank">View App</a>
+                                        <a href="https://netmatters-reflection-05e587136ad3.herokuapp.com/" target="_blank">View App</a>
                                     </div>                            
                                 </section>
 
@@ -190,7 +190,7 @@
                                 <section class="apps">
                                     <h4 class="sub-heading">Applications</h4>
                                     <div class="apps-link-group">                                     
-                                        <a href="https://js-array.marianne-porter.netmatters-scs.co.uk/" target="_blank">View App</a>
+                                        <a href="https://jsarray.z35.web.core.windows.net" target="_blank">View App</a>
                                     </div>                            
                                 </section>
 
