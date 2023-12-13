@@ -1,5 +1,5 @@
 <aside class="aside">
-    <h1><a href="index.php">MP</a><button class="close-nav-btn">X</button></h1>
+    <h1><a href="index.php">MP</a><button id="close-nav-btn">X</button></h1>
 
     <nav class="nav">
         <a href="about.php">About Me</a>

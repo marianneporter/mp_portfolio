@@ -1,5 +1,5 @@
 const mobileNavIcon = document.querySelector('.mobile-nav-icon');
-const closeNavBtn =  document.querySelector('.close-nav-btn');
+const closeNavBtn =  document.querySelector('#close-nav-btn');
 const mainContainer = document.querySelector('.main-container');
 const aside = document.querySelector('.aside');
 const overlay = document.querySelector('.overlay');
