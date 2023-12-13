@@ -58,7 +58,7 @@ function deactivateOverlay() {
     overlay.style.opacity = 0;
     setTimeout(() => {       
         overlay.style.zIndex = '-1';
-    }, 2000);
+    }, 500);
 }
 
 function activateOverlay() {

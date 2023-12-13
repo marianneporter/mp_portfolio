@@ -54,7 +54,7 @@ a {
   background-color: black;
   opacity: 0;
   z-index: -1;
-  transition: opacity 2000ms ease;
+  transition: opacity 500ms ease;
 }
 
 .aside h1 {
@@ -84,7 +84,7 @@ a {
   top: 0;
   left: -15rem;
   background-color: #111;
-  transition: left 2000ms ease;
+  transition: left 500ms;
   overflow-x: hidden;
 }
 
