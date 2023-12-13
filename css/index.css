@@ -134,6 +134,8 @@ a {
   height: 3rem;
   width: 3rem;
   font-size: 1.5rem;
+  appearance: none;
+  -webkit-appearance: none;
   border-radius: 0;
   color: #3f4756;
 }
