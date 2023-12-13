@@ -107,6 +107,9 @@ a {
 }
 
 .mobile-nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   color: black;
   position: absolute;
@@ -125,9 +128,14 @@ a {
 }
 
 .close-nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 3rem;
   width: 3rem;
   font-size: 1.5rem;
+  border-radius: 0;
+  color: #3f4756;
 }
 @media (min-width: 992px) {
   .close-nav-btn {

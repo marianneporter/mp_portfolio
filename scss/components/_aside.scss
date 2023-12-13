@@ -50,6 +50,9 @@
 }  
 
 .mobile-nav-icon {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: white;
     color: black;
     position: absolute;
@@ -67,9 +70,14 @@
 } 
 
 .close-nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     height: 3rem;
     width: 3rem;
     font-size: 1.5rem;
+    border-radius: 0;   
+    color: map-get($colors, 'dark-grey');
 
     @include lg {
         display: none;
