@@ -58,6 +58,21 @@ a {
   transition: opacity 500ms ease;
 }
 
+.mobile-nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  font-size: 2rem;
+  z-index: 5;
+  padding: 0.3rem 0.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
 .aside h1 {
   border-bottom: 0.5px solid #ecb8c7;
   height: 6rem;
@@ -105,27 +120,6 @@ a {
   background-color: #9d3256;
   color: white;
   transform: scale(1.05);
-}
-
-.mobile-nav-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: black;
-  position: absolute;
-  left: 1.5rem;
-  top: 1.5rem;
-  font-size: 2rem;
-  z-index: 5;
-  padding: 0.3rem 0.5rem;
-  height: 3rem;
-  width: 3rem;
-}
-@media (min-width: 992px) {
-  .mobile-nav-icon {
-    display: none;
-  }
 }
 
 #close-nav-btn {
@@ -283,6 +277,7 @@ a {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
+  position: relative;
 }
 @media (min-width: 992px) {
   .main-container {
@@ -630,6 +625,7 @@ input:focus, textarea:focus {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
+  position: relative;
   background-color: #1f232a;
   color: white;
   min-height: 100vh;
@@ -752,6 +748,7 @@ input:focus, textarea:focus {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
+  position: relative;
   background-color: #1f232a;
   color: white;
   min-height: 100vh;
@@ -969,6 +966,7 @@ input:focus, textarea:focus {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
+  position: relative;
   background-color: #1f232a;
   color: white;
   min-height: 100vh;
