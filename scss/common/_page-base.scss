@@ -41,9 +41,11 @@
 
 // container for large screens that takes width of nav into account
 @mixin main-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100vh;
     @include lg {
-        margin-left: 15rem; 
-       // transition: margin-left 2000ms ease;       
+        margin-left: 15rem;       
         @include lg-content-width;
     }      
 }

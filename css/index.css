@@ -12,6 +12,7 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: "Rubik Regular";
 }
 
@@ -278,6 +279,11 @@ a {
   margin-top: 0.25rem;
 }
 
+.main-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}
 @media (min-width: 992px) {
   .main-container {
     margin-left: 15rem;
@@ -621,6 +627,9 @@ input:focus, textarea:focus {
 }
 
 .about {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
   background-color: #1f232a;
   color: white;
   min-height: 100vh;
@@ -740,6 +749,9 @@ input:focus, textarea:focus {
 }
 
 .coding {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
   background-color: #1f232a;
   color: white;
   min-height: 100vh;
@@ -954,6 +966,9 @@ input:focus, textarea:focus {
 }
 
 .scs {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
   background-color: #1f232a;
   color: white;
   min-height: 100vh;

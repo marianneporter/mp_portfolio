@@ -45,13 +45,15 @@ window.addEventListener('resize', () => {
 function openSideMenu() {
     aside.style.left = "0";
     activateOverlay();  
-    mainContainer.style.position = "fixed";
+    preventMainContentScrolling();
+ //   mainContainer.style.position = "fixed";
 }
 
 function closeSideMenu() {
     aside.style.left = "-15rem";
-    deactivateOverlay();   
-    mainContainer.style.position = "static";
+    deactivateOverlay();  
+    allowMainContentScrolling(); 
+  //  mainContainer.style.position = "static";
 }
 
 function deactivateOverlay() { 
@@ -64,4 +66,39 @@ function deactivateOverlay() {
 function activateOverlay() {
     overlay.style.zIndex = "1";
     overlay.style.opacity = "60%";
+}
+
+
+function preventMainContentScrolling() {
+    console.log('stop scroll');
+    mainContainer.addEventListener('wheel', 
+                                    preventScrolling,
+                                    { passive: false });
+}
+
+function allowMainContentScrolling() {
+    console.log('restart scroll');
+    mainContainer.removeEventListener('wheel', preventScrolling);
+}
+
+ function preventScrolling(e) {
+        console.log(e);
+        e.preventDefault();
+//     // prevent scrolling of main content for small screens if side nav is active
+//     let element = e.target;
+//     let asideParent = false;
+
+//     do {
+//         console.log(element.classList);
+//         if (element.classList.contains('aside')) {
+//             asideParent = true;
+//         } else {
+//             element = element.parentElement;
+//         }
+//     } while (element && !asideParent);
+   
+
+//     if (!asideParent) {
+//       e.preventDefault();
+//     }
 }
