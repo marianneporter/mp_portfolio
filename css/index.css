@@ -63,6 +63,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: white;
+  color: black;
   position: absolute;
   left: 1.5rem;
   top: 1.5rem;
@@ -71,6 +72,11 @@ a {
   padding: 0.3rem 0.5rem;
   height: 3rem;
   width: 3rem;
+}
+@media (min-width: 992px) {
+  .mobile-nav-icon {
+    display: none;
+  }
 }
 
 .aside h1 {

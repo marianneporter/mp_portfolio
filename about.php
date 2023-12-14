@@ -6,6 +6,8 @@
         <?php require_once 'includes/nav.php'; ?> 
     
         <div class="main-container about">
+
+            <?php require_once 'includes/mobileNavIcon.php'; ?>  
            
             <div class="about__details">
                 <h1>About Me</h1>

@@ -69,36 +69,16 @@ function activateOverlay() {
 }
 
 
-function preventMainContentScrolling() {
-    console.log('stop scroll');
+function preventMainContentScrolling() {  
     mainContainer.addEventListener('wheel', 
                                     preventScrolling,
                                     { passive: false });
 }
 
-function allowMainContentScrolling() {
-    console.log('restart scroll');
+function allowMainContentScrolling() { 
     mainContainer.removeEventListener('wheel', preventScrolling);
 }
 
  function preventScrolling(e) {
-        console.log(e);
         e.preventDefault();
-//     // prevent scrolling of main content for small screens if side nav is active
-//     let element = e.target;
-//     let asideParent = false;
-
-//     do {
-//         console.log(element.classList);
-//         if (element.classList.contains('aside')) {
-//             asideParent = true;
-//         } else {
-//             element = element.parentElement;
-//         }
-//     } while (element && !asideParent);
-   
-
-//     if (!asideParent) {
-//       e.preventDefault();
-//     }
 }

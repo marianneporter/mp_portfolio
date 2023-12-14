@@ -7,12 +7,8 @@
 
         <div class="main-container" style="overflow-y: auto">
         
-            <nav class="mobile-nav-icon">
-                <div class="icon">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-            </nav>
-            
+            <?php require_once 'includes/mobileNavIcon.php'; ?>  
+
             <header class="header">     
                 <div class="text-container">
                     <div class="photo-container">

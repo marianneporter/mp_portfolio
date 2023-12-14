@@ -7,6 +7,9 @@
         <?php require_once 'includes/nav.php'; ?>  
 
         <div class="coding">
+
+            <?php require_once 'includes/mobileNavIcon.php'; ?>  
+            
             <h1>Coding Examples</h1>  
 
             <div class="coding-slides-wrapper">

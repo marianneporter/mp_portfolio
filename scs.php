@@ -6,7 +6,9 @@
         <?php require_once "includes/nav.php" ?>
                
         <div class="scs">
-          
+
+            <?php require_once 'includes/mobileNavIcon.php'; ?>  
+
             <div class="articles">
                 <h1>The Scion Coalition Scheme</h1>
                 <article>
