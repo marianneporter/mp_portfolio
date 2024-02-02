@@ -3,28 +3,35 @@
     // scss for project cards group                                             */
     // **************************************************************************/
     display: grid;
-    grid-template-columns: 1fr;    
-
+    grid-template-columns: 1fr;  
     grid-auto-rows: 28rem;   
     gap: 2rem;
-    padding: 0 1rem;   
-
+    padding: 0 1rem;  
 
     @include sm {   
         margin-left: 20%;
         margin-right: 20%;
-    }
-   
+    }   
 
     @include md {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(8, 1fr);
         grid-auto-rows: 27rem;
         margin-left: 2rem;
         margin-right: 2rem;
+    
+        &__card {
+            grid-column: span 4;
+        }
+
+        //last odd item
+        &__card:nth-child(5) {
+            grid-column: 3 / span 4;
+        }
+
     }   
 
     @include lg {
-        grid-template-columns: 1fr 1fr;
+       
         grid-auto-rows: 26rem;
         margin-left: 2rem;
         margin-right: 2rem;       
@@ -32,27 +39,46 @@
                   
     @include xl {
         // increase back to 3 rows when more projects.
-        grid-template-columns: 1fr 1fr;  
+      
         grid-auto-rows: 28rem;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     @include xxl {
-        margin-left: 15%;
-        margin-right: 15%;
+        grid-template-columns: repeat(12, 1fr);  
+        grid-auto-rows: 28rem;        
+        margin-left: 5%;
+        margin-right: 5%;
+
+        // Targeting the first three items to span 4 columns each
+        &__card:nth-child(-n+3) {      
+            grid-column: span 4;
+        }
+
+        // Targeting the 4th item to start from the 3rd column and span 4 columns
+        &__card:nth-child(4) {      
+            grid-column: 3 / span 4;
+        }
+
+        // Targeting the 5th item to directly follow the 4th and span 4 columns
+        &__card:nth-child(5) {      
+            grid-column: 7 / span 4;
+            grid-row: 2 / 3;
+        }
     }
 
     
     // ***************************************************************************/
-    // scss for an individual project card                                       */
+    // scss for an individual project card (grid item)                                      */
     // ***************************************************************************/
     &__card {
         position: relative;
-        text-align: center;     
-     
+        text-align: center;    
         box-shadow: 0 0 10px 0 #A3ABBD;
     }
+
+
 
     &__card .front, &__card .back {
         position: absolute;

@@ -72,7 +72,51 @@
                                 
                             </div>                                      
                         </div>   
+                        <div class="projects__card">                               
+                            <div class="front">
+                                <h3>Sunnyview Stables </h3>
+                                <h4>Full Stack Project</h4>
+                                <p>C#/ASP.Net API with alternative Vue and Angular Front Ends</p>
+                                <div class="img-container">
+                                    <img class="img" src="assets/images/projects/sunnystables.png" alt="No image">     
+                                </div>   
+                                <button class="toggle-btn front-toggle">More Info</button>                                      
+                            </div>
+                            <div class="back">
+                                <h3 class="">Sunnyview Stables</h3>
+                                <section class="icon-group">
+                                    <img class="img-icon" src="assets/images/icons/vue-js-icon.svg" alt="">                                  
+                                    <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="">
+                                    <img class="img-icon" src="assets/images/icons/typescript.png" alt=""> 
+                                    <img class="img-icon" src="assets/images/icons/c-sharp.svg" alt="C# icon">
+                                    <img class="img-icon" src="assets/images/icons/icons8-microsoft-sql-server.svg" alt="SQL Server Icon">      
+                                    <img class="img-icon" src="assets/images/icons/icons8-angular.svg" alt="Angular Icon">    
+                                    <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
+                                    <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                   
+                                    <img class="img-icon" src="assets/images/icons/sass-icon.svg" alt="SASS Icon">
+                                </section> 
+                                <section class="github">
+                                    <h4 class="sub-heading">Github</h4>
+                                    <div class="github-link-group">
+                                        <a href="https://github.com/marianneporter/SunnysideStablesAPI" target="_blank">ASP.Net API</a>
+                                        <a href="https://github.com/marianneporter/sunnysidestablesvue" target="_blank">Vue.js SPA</a>
+                                        <a href="https://github.com/marianneporter/SunnyviewStablesSPA" target="_blank">Angular SPA</a>
+                                    </div> 
+                                </section>
 
+                                <section class="apps">
+                                    <h4 class="sub-heading">Applications</h4>
+                                    <div class="apps-link-group">
+                                        <a href="https://sunnystablesvueapp.z33.web.core.windows.net" target="_blank">Vue.js</a>
+                                        <a href="https://sunnystables.azurewebsites.net" target="_blank">Angular</a>
+                                    </div>
+                                    <h4 class="demo-user">Demo User Id and Password: demo@sunnystables.com/Demo1234!*</h4>
+                                </section>    
+                                
+                                <button class="toggle-btn back-toggle">Back to summary</button>                      
+                                
+                            </div>                                      
+                        </div>   
                         <div class="projects__card">                               
                             <div class="front">
                                 <h3>Cats CRUD Apps</h3>
