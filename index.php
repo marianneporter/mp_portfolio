@@ -29,43 +29,35 @@
                       
                         <div class="projects__card">                               
                             <div class="front">
-                                <h3>Sunnyview Stables </h3>
-                                <h4>Full Stack Project</h4>
-                                <p>C#/ASP.Net API with alternative Vue and Angular Front Ends</p>
-                                <div class="img-container">
-                                    <img class="img" src="assets/images/projects/sunnystables.png" alt="No image">     
+                                <h3>Lara Quiz</h3>
+                                <h4>Quiz Application that uses The Trivia API</h4>
+                                <p>A server side application built in Laravel and PHP</p>
+                                <div class="img-container" style="margin-top: 1rem">
+                                    <img class="img" src="assets/images/projects/lara_quiz.png" alt="No image">     
                                 </div>   
                                 <button class="toggle-btn front-toggle">More Info</button>                                      
                             </div>
                             <div class="back">
-                                <h3 class="">Sunnyview Stables</h3>
+                                <h3 class="">Lara Quiz</h3>
                                 <section class="icon-group">
-                                    <img class="img-icon" src="assets/images/icons/vue-js-icon.svg" alt="">                                  
-                                    <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="">
-                                    <img class="img-icon" src="assets/images/icons/typescript.png" alt=""> 
-                                    <img class="img-icon" src="assets/images/icons/c-sharp.svg" alt="C# icon">
-                                    <img class="img-icon" src="assets/images/icons/icons8-microsoft-sql-server.svg" alt="SQL Server Icon">      
-                                    <img class="img-icon" src="assets/images/icons/icons8-angular.svg" alt="Angular Icon">    
+                                    <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">
+                                    <img class="img-icon" src="assets/images/icons/laravel_4.svg" alt="Laravel Icon">
+                                    <img class="img-icon" src="assets/images/icons/tailwind-css-icon.svg" alt="Tailwind Icon">
                                     <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
-                                    <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                   
-                                    <img class="img-icon" src="assets/images/icons/sass-icon.svg" alt="SASS Icon">
+                                    <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                                
                                 </section> 
                                 <section class="github">
                                     <h4 class="sub-heading">Github</h4>
                                     <div class="github-link-group">
-                                        <a href="https://github.com/marianneporter/SunnysideStablesAPI" target="_blank">ASP.Net API</a>
-                                        <a href="https://github.com/marianneporter/sunnysidestablesvue" target="_blank">Vue.js SPA</a>
-                                        <a href="https://github.com/marianneporter/SunnyviewStablesSPA" target="_blank">Angular SPA</a>
+                                        <a href="https://github.com/marianneporter/lara_quiz" target="_blank">View Repo</a>                               
                                     </div> 
                                 </section>
 
                                 <section class="apps">
-                                    <h4 class="sub-heading">Applications</h4>
+                                    <h4 class="sub-heading">Application</h4>
                                     <div class="apps-link-group">
-                                        <a href="https://sunnystablesvueapp.z33.web.core.windows.net" target="_blank">Vue.js</a>
-                                        <a href="https://sunnystables.azurewebsites.net" target="_blank">Angular</a>
-                                    </div>
-                                    <h4 class="demo-user">Demo User Id and Password: demo@sunnystables.com/Demo1234!*</h4>
+                                        <a href="https://lara-quiz-1a71244db678.herokuapp.com/" target="_blank">View App</a>                                        
+                                    </div>                                  
                                 </section>    
                                 
                                 <button class="toggle-btn back-toggle">Back to summary</button>                      
@@ -134,8 +126,8 @@
                                     <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">
                                     <img class="img-icon" src="assets/images/icons/laravel_4.svg" alt="Laravel Icon">
                                     <img class="img-icon" src="assets/images/icons/icons8-mysql-48.png" alt="mySQL Icon">
-                                    <img class="img-icon" src="assets/images/icons/tailwind-css-icon.svg" alt="mySQL Icon">
-                                    <img class="img-icon" src="assets/images/icons/icons8-bootstrap.svg" alt="mySQL Icon">                                  
+                                    <img class="img-icon" src="assets/images/icons/tailwind-css-icon.svg" alt="tailwind Icon">
+                                    <img class="img-icon" src="assets/images/icons/icons8-bootstrap.svg" alt="bootstrap Icon">                                  
                                     <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="JavaScript Icon">                           
                                     <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="">
                                     <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="">                        
