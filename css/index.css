@@ -410,6 +410,32 @@ a {
   height: 20rem;
   overflow: hidden;
 }
+.main .projects__card .front .two-img-layout-card {
+  display: flex;
+  gap: 0.5rem;
+}
+.main .projects__card .front .two-img-layout-card:last-of-type {
+  justify-content: space-evenly;
+}
+.main .projects__card .front .two-projects-desc {
+  margin-bottom: 1rem;
+}
+.main .projects__card .front .sml-img-container {
+  margin-top: 0.5rem;
+  width: 50%;
+  height: 6rem;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .main .projects__card .front .sml-img-container {
+    height: 6.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .main .projects__card .front .sml-img-container {
+    height: 8rem;
+  }
+}
 .main .projects__card .front img {
   width: 90%;
   height: auto;

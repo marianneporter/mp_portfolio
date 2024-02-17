@@ -29,16 +29,26 @@
                       
                         <div class="projects__card">                               
                             <div class="front">
-                                <h3>Lara Quiz</h3>
-                                <h4>Quiz Application that uses The Trivia API</h4>
-                                <p>A server side application built in Laravel and PHP</p>
-                                <div class="img-container" style="margin-top: 1rem">
-                                    <img class="img" src="assets/images/projects/lara_quiz.png" alt="No image">     
-                                </div>   
+                                <h3>Laravel and Vue Quiz Apps</h3>
+                                <h4>Quiz Applications both using The Trivia API</h4>
+                                <p class="two-projects-desc">Two contrasting ways of building the same Quiz app</p>
+                                <div class="two-img-layout-card">
+                                    <div class="sml-img-container">
+                                       <img class="img" src="assets/images/projects/lara_quiz.png" alt="No image">                                   
+                                    </div>
+                                    <p>A server side Laravel App</p>   
+                                </div>
+                                <div class="two-img-layout-card">
+                                    <p>A client side Vue App</p>   
+                                    <div class="sml-img-container">
+                                       <img class="img" src="assets/images/projects/vue_quiz.png" alt="No image">     
+                                    </div>
+                                                                 
+                                </div>
                                 <button class="toggle-btn front-toggle">More Info</button>                                      
                             </div>
                             <div class="back">
-                                <h3 class="">Lara Quiz</h3>
+                                <h3 class="">Laravel and Vue Quiz Apps</h3>
                                 <section class="icon-group">
                                     <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">
                                     <img class="img-icon" src="assets/images/icons/laravel_4.svg" alt="Laravel Icon">

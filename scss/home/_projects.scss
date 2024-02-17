@@ -129,11 +129,46 @@
             overflow: hidden;
         }
 
+        .two-img-layout-card {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .two-img-layout-card:last-of-type {
+            justify-content: space-evenly;
+        }
+
+        .two-projects-desc {
+            margin-bottom: 1rem;
+        }
+        
+        .sml-img-container {
+            margin-top: 0.5rem;
+            width: 50%;
+            height: 6rem;
+            overflow: hidden;
+        }
+
+        @include lg {
+            .sml-img-container {
+                height: 6.25rem;
+            }
+        }
+
+        @include xl {
+            .sml-img-container {
+                height: 8rem;
+            }            
+        }
+
         img {
             width: 90%;
             height: auto;     
             margin: 0 auto;                
         }
+
+
+
     }
 
     &__card .back {
