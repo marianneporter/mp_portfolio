@@ -141,6 +141,12 @@
         .two-projects-desc {
             margin-bottom: 1rem;
         }
+
+        // .two-projects-links {
+        //     display: flex;          
+        // }
+
+    
         
         .sml-img-container {
             margin-top: 0.5rem;
@@ -201,15 +207,46 @@
             justify-content: center;
         }
 
+        .img-icon-sm {
+            max-width: 1.25rem;
+            height: auto;                    
+        }
+
         .img-icon {
             max-width: 1.5rem;
             height: auto;            
         }   
         
-        .img-icon-bigger {
-            max-width: 5rem;
+        .img-icon-lg {
+            max-width: 2rem;
             height: auto;              
         }
+
+        .two-project-layout {
+
+            .two-projects-links {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+              
+
+                &:last-of-type {
+                    margin-top: 0.35rem;
+                }
+            }
+
+            h4:first-of-type {
+                margin-top: 1rem;
+                margin-bottom: -0.35rem;
+               
+            }
+
+ 
+
+            h4:last-of-type {
+                margin-top: 1.25rem;
+            }
+        } 
 
         .github-link-group, .apps-link-group {
             display: flex;

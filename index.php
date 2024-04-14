@@ -48,28 +48,53 @@
                                 <button class="toggle-btn front-toggle">More Info</button>                                      
                             </div>
                             <div class="back">
-                                <h3 class="">Laravel and Vue Quiz Apps</h3>
-                                <section class="icon-group">
-                                    <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">
-                                    <img class="img-icon" src="assets/images/icons/laravel_4.svg" alt="Laravel Icon">
-                                    <img class="img-icon" src="assets/images/icons/tailwind-css-icon.svg" alt="Tailwind Icon">
-                                    <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
-                                    <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                                
-                                </section> 
-                                <section class="github">
-                                    <h4 class="sub-heading">Github</h4>
-                                    <div class="github-link-group">
-                                        <a href="https://github.com/marianneporter/lara_quiz" target="_blank">View Repo</a>                               
+                                <div class="two-project-layout">
+                                    <h3 class="">Laravel and Vue Quiz Apps</h3>
+                                    <h4>Lara Quiz</h4>
+                                    <div class="icon-group">
+                                        <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">
+                                        <img class="img-icon" src="assets/images/icons/laravel_4.svg" alt="Laravel Icon">
+                                        <img class="img-icon" src="assets/images/icons/tailwind-css-icon.svg" alt="Tailwind Icon">
+                                        <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
+                                        <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                                
                                     </div> 
-                                </section>
+                                    <div class="two-projects-links">
+                                        <div class="github">                                    
+                                            <div class="github-link-group">
+                                                <a href="https://github.com/marianneporter/lara_quiz" target="_blank">View Repo</a>                               
+                                            </div> 
+                                        </div>
 
-                                <section class="apps">
-                                    <h4 class="sub-heading">Application</h4>
-                                    <div class="apps-link-group">
-                                        <a href="https://lara-quiz-1a71244db678.herokuapp.com/" target="_blank">View App</a>                                        
-                                    </div>                                  
-                                </section>    
-                                
+                                        <div class="apps">                                       
+                                            <div class="apps-link-group">
+                                                <a href="https://lara-quiz-1a71244db678.herokuapp.com/" target="_blank">View App</a>                                        
+                                            </div>                                  
+                                        </div>                                        
+                                    </div>
+                                    <h4>Vue Quiz</h4>
+                                    <div class="icon-group">
+                                        <img class="img-icon-lg" src="assets/images/icons/vue-js-icon.svg" alt="vue.js icon">
+                                        <img class="img-icon-sm" src="assets/images/icons/pinia-seeklogo.svg" alt="pinia icon">
+                                        <img class="img-icon" src="assets/images/icons/javascript-icon.svg" alt="vue.js icon">
+                                        <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
+                                        <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                                
+                                    </div>     
+
+                                    <div class="two-projects-links">
+                                        <div class="github">                                  
+                                            <div class="github-link-group">
+                                                <a href="https://github.com/marianneporter/vue_quiz" target="_blank">View Repo</a>                               
+                                            </div> 
+                                        </div>
+
+                                        <div class="apps">                          
+                                            <div class="apps-link-group">
+                                                <a href="https://vue-quiz-i5vh.onrender.com" target="_blank">View App</a>                                        
+                                            </div>                                  
+                                        </div>    
+                                    </div>                                                    
+                                </div>
+                     
                                 <button class="toggle-btn back-toggle">Back to summary</button>                      
                                 
                             </div>                                      
@@ -88,7 +113,7 @@
                                 <h3 class="">Sunnyview Stables</h3>
                                 <section class="icon-group">
                                     <img class="img-icon" src="assets/images/icons/vue-js-icon.svg" alt="">                                  
-                                    <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="">
+                                    <img class="img-icon" src="assets/images/icons/javascript-icon.svg" alt="">
                                     <img class="img-icon" src="assets/images/icons/typescript.png" alt=""> 
                                     <img class="img-icon" src="assets/images/icons/c-sharp.svg" alt="C# icon">
                                     <img class="img-icon" src="assets/images/icons/icons8-microsoft-sql-server.svg" alt="SQL Server Icon">      
@@ -138,7 +163,7 @@
                                     <img class="img-icon" src="assets/images/icons/icons8-mysql-48.png" alt="mySQL Icon">
                                     <img class="img-icon" src="assets/images/icons/tailwind-css-icon.svg" alt="tailwind Icon">
                                     <img class="img-icon" src="assets/images/icons/icons8-bootstrap.svg" alt="bootstrap Icon">                                  
-                                    <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="JavaScript Icon">                           
+                                    <img class="img-icon" src="assets/images/icons/javascript-icon.svg" alt="JavaScript Icon">                           
                                     <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="">
                                     <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="">                        
                                 </section>          
@@ -185,7 +210,7 @@
                                 <section class="icon-group">
                                     <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">                                   
                                     <img class="img-icon" src="assets/images/icons/icons8-mysql-48.png" alt="mySQL Icon">                                                                   
-                                    <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="JavaScript Icon">                           
+                                    <img class="img-icon" src="assets/images/icons/javascript-icon.svg" alt="JavaScript Icon">                           
                                     <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
                                     <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                   
                                     <img class="img-icon" src="assets/images/icons/sass-icon.svg" alt="SASS Icon">
@@ -224,7 +249,7 @@
                                 <section class="icon-group">
                                     <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">                                   
                                     <img class="img-icon" src="assets/images/icons/icons8-mysql-48.png" alt="mySQL Icon">                                                                   
-                                    <img class="img-icon" src="assets/images/icons/javascript-programming-language-icon.svg" alt="JavaScript Icon">                           
+                                    <img class="img-icon" src="assets/images/icons/javascript-icon.svg" alt="JavaScript Icon">                           
                                     <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
                                     <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                   
                                     <img class="img-icon" src="assets/images/icons/sass-icon.svg" alt="SASS Icon">

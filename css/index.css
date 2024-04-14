@@ -466,13 +466,32 @@ a {
   gap: 0.5rem;
   justify-content: center;
 }
+.main .projects__card .back .img-icon-sm {
+  max-width: 1.25rem;
+  height: auto;
+}
 .main .projects__card .back .img-icon {
   max-width: 1.5rem;
   height: auto;
 }
-.main .projects__card .back .img-icon-bigger {
-  max-width: 5rem;
+.main .projects__card .back .img-icon-lg {
+  max-width: 2rem;
   height: auto;
+}
+.main .projects__card .back .two-project-layout .two-projects-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.main .projects__card .back .two-project-layout .two-projects-links:last-of-type {
+  margin-top: 0.35rem;
+}
+.main .projects__card .back .two-project-layout h4:first-of-type {
+  margin-top: 1rem;
+  margin-bottom: -0.35rem;
+}
+.main .projects__card .back .two-project-layout h4:last-of-type {
+  margin-top: 1.25rem;
 }
 .main .projects__card .back .github-link-group, .main .projects__card .back .apps-link-group {
   display: flex;
