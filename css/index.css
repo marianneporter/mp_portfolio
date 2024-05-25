@@ -329,9 +329,6 @@ a {
   .main .projects__card {
     grid-column: span 4;
   }
-  .main .projects__card:nth-child(5) {
-    grid-column: 3/span 4;
-  }
 }
 @media (min-width: 992px) {
   .main .projects {
@@ -356,13 +353,6 @@ a {
   }
   .main .projects__card:nth-child(-n+3) {
     grid-column: span 4;
-  }
-  .main .projects__card:nth-child(4) {
-    grid-column: 3/span 4;
-  }
-  .main .projects__card:nth-child(5) {
-    grid-column: 7/span 4;
-    grid-row: 2/3;
   }
 }
 .main .projects__card {

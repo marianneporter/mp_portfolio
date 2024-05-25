@@ -23,10 +23,10 @@
             grid-column: span 4;
         }
 
-        //last odd item
-        &__card:nth-child(5) {
-            grid-column: 3 / span 4;
-        }
+        // if there is a last odd item
+        // &__card:nth-child(5) {
+        //     grid-column: 3 / span 4;
+        // }
 
     }   
 
@@ -56,16 +56,16 @@
             grid-column: span 4;
         }
 
-        // Targeting the 4th item to start from the 3rd column and span 4 columns
-        &__card:nth-child(4) {      
-            grid-column: 3 / span 4;
-        }
+        // // Targeting the 4th item to start from the 3rd column and span 4 columns
+        // &__card:nth-child(4) {      
+        //     grid-column: 3 / span 4;
+        // }
 
-        // Targeting the 5th item to directly follow the 4th and span 4 columns
-        &__card:nth-child(5) {      
-            grid-column: 7 / span 4;
-            grid-row: 2 / 3;
-        }
+        // // Targeting the 5th item to directly follow the 4th and span 4 columns
+        // &__card:nth-child(5) {      
+        //     grid-column: 7 / span 4;
+        //     grid-row: 2 / 3;
+        // }
     }
 
     
@@ -142,12 +142,6 @@
             margin-bottom: 1rem;
         }
 
-        // .two-projects-links {
-        //     display: flex;          
-        // }
-
-    
-        
         .sml-img-container {
             margin-top: 0.5rem;
             width: 50%;

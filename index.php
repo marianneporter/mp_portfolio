@@ -12,7 +12,7 @@
             <header class="header">     
                 <div class="text-container">
                     <div class="photo-container">
-                        <img src="assets/images/mp_portfolio.jpg" 
+                        <img src="assets/images/mp_portfolio250524.jpg" 
                             alt="photo of marianne">           
                     </div>
                     <div class="h1-cont"><h1></h1></div>
@@ -26,6 +26,49 @@
                     <h2>My Projects...</h2>
 
                     <section class="projects">
+                        <div class="projects__card">                               
+                            <div class="front">
+                                <h3>Lara Todos</h3>  
+                                <h4>Full Stack Project</h4>                           
+                                <p>Inertia App, Using Laravel for the Backend and Vue for the Front End functioality</p>
+                                <div class="img-container" style="margin-top: 1rem">
+                                    <img class="img" src="assets/images/projects/lara_todos.png" alt="No image">     
+                                </div>
+                                <button class="toggle-btn front-toggle">More Info</button>            
+                            </div>
+                            <div class="back">
+                                <h3 class="">Lara Todos</h3>
+                                <h4>Inertia App with Laravel and Vue</h4>
+                                <section class="icon-group">                                  
+                                    <img class="img-icon" src="assets/images/icons/laravel_4.svg" alt="laravel Icon">  
+                                    <img class="img-icon" src="assets/images/icons/vue-js-icon.svg" alt="vue Icon"> 
+                                    <img class="img-icon" src="assets/images/icons/inertia.png" alt="inertia icon">
+                                    <img class="img-icon" src="assets/images/icons/pinia-seeklogo.svg" alt="pinia Icon"> 
+                                    <img src="assets/images/icons/icons8-php-logo.svg" alt="PHP Icon">                                   
+                                    <img class="img-icon" src="assets/images/icons/icons8-mysql-48.png" alt="mySQL Icon">                                                                   
+                                    <img class="img-icon" src="assets/images/icons/javascript-icon.svg" alt="JavaScript Icon">                           
+                                    <img class="img-icon" src="assets/images/icons/css-icon.svg" alt="CSS3 Icon">
+                                    <img class="img-icon" src="assets/images/icons/html-icon.svg" alt="HTML5 Icon">                                   
+                                </section>          
+                                <section class="github">
+                                    <h4 class="sub-heading">Github</h4>
+                                    <div class="github-link-group">                                     
+                                        <a href="https://github.com/marianneporter/lara_todos" target="_blank">View Repo</a>                                     
+                                    </div>
+                                </section>
+
+                                <section class="apps">
+                                    <h4 class="sub-heading">Applications</h4>
+                                    <div class="apps-link-group">                                     
+                                        <a href="https://lara-todos-bdad817dcf29.herokuapp.com/" target="_blank">View App</a>
+                                    </div>   
+                                    <h4 class="demo-user">Demo User Id and Password: john@test.com/Demo0801</h4>                         
+                                </section>
+
+                                <button class="toggle-btn back-toggle">Back to summary</button>                                 
+    
+                            </div>                                      
+                        </div> 
                       
                         <div class="projects__card">                               
                             <div class="front">
