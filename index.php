@@ -12,7 +12,7 @@
             <header class="header">     
                 <div class="text-container">
                     <div class="photo-container">
-                        <img src="assets/images/mp_portfolio250524.jpg" 
+                        <img src="assets/images/mp_250524.jpg" 
                             alt="photo of marianne">           
                     </div>
                     <div class="h1-cont"><h1></h1></div>
