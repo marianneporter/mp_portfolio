@@ -6,7 +6,7 @@ function typewriterAnimation() {
    /*********************************************************************** */  
 
     const devName = "Marianne Porter";
-    const role = "Junior Web Developer";
+    const role = "Web Developer";
     const area = "Based in Norwich, Norfolk";
     const timeInterval = 150;
 

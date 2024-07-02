@@ -12,7 +12,11 @@
             <div class="about__details">
                 <h1>About Me</h1>
                 <article>
-                    <p>I have a passion for building attractive, easy to use and robust websites.  I have done this as a hobby for a good few years and am thoroughly enjoying taking part in the Scion Coalition Scheme at Netmatters so that I can take my skills to the next level.</p>
+                    <p>I have a passion for building attractive, easy to use and robust websites.</p> 
+                    <p>Over the last few years, I have taken numerous online courses and have used the skills learned to build many practise websites.
+                        Some of which are online and linked to this portfolio. </p>    
+                    <p>Last year I completed the Scion Coalition Scheme at Netmatters.</p>                     
+                    <p>My early career was as a Analyst/Programmer at Aviva.</p>                   
                     <p>Outside of web development, I enjoy spending time with my family, photography, walking and cycling.</p>                
                 </article> 
             </div>
